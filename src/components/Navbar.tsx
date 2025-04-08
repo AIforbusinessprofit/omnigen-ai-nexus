@@ -23,14 +23,15 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
-          ? "bg-white/90 backdrop-blur-md shadow-sm py-2"
+          ? "bg-background/90 backdrop-blur-md shadow-sm py-2"
           : "bg-transparent py-4"
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center">
-          <span className="font-bold text-2xl text-omnigen-purple">
-            Omnigen<span className="text-omnigen-teal">AI</span>
+          <span className="font-bold text-2xl">
+            <span className="text-omnigen-purple">Omnigen</span>
+            <span className="text-omnigen-teal">AI</span>
           </span>
         </Link>
 
@@ -38,25 +39,25 @@ const Navbar = () => {
         <nav className="hidden md:flex space-x-8">
           <Link
             to="/"
-            className="text-omnigen-dark hover:text-omnigen-purple transition-colors"
+            className="text-foreground hover:text-omnigen-purple transition-colors"
           >
             Home
           </Link>
           <Link
             to="/services"
-            className="text-omnigen-dark hover:text-omnigen-purple transition-colors"
+            className="text-foreground hover:text-omnigen-purple transition-colors"
           >
             Services
           </Link>
           <Link
             to="/case-studies"
-            className="text-omnigen-dark hover:text-omnigen-purple transition-colors"
+            className="text-foreground hover:text-omnigen-purple transition-colors"
           >
             Case Studies
           </Link>
           <Link
             to="/about"
-            className="text-omnigen-dark hover:text-omnigen-purple transition-colors"
+            className="text-foreground hover:text-omnigen-purple transition-colors"
           >
             About Us
           </Link>
@@ -70,7 +71,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-omnigen-dark"
+          className="md:hidden text-foreground"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -80,35 +81,35 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       <div
         className={cn(
-          "md:hidden fixed inset-0 bg-white z-40 transition-transform duration-300 transform",
+          "md:hidden fixed inset-0 bg-background z-40 transition-transform duration-300 transform",
           isOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
         <div className="flex flex-col p-8 pt-20 space-y-6">
           <Link
             to="/"
-            className="text-lg font-medium text-omnigen-dark hover:text-omnigen-purple"
+            className="text-lg font-medium text-foreground hover:text-omnigen-purple"
             onClick={() => setIsOpen(false)}
           >
             Home
           </Link>
           <Link
             to="/services"
-            className="text-lg font-medium text-omnigen-dark hover:text-omnigen-purple"
+            className="text-lg font-medium text-foreground hover:text-omnigen-purple"
             onClick={() => setIsOpen(false)}
           >
             Services
           </Link>
           <Link
             to="/case-studies"
-            className="text-lg font-medium text-omnigen-dark hover:text-omnigen-purple"
+            className="text-lg font-medium text-foreground hover:text-omnigen-purple"
             onClick={() => setIsOpen(false)}
           >
             Case Studies
           </Link>
           <Link
             to="/about"
-            className="text-lg font-medium text-omnigen-dark hover:text-omnigen-purple"
+            className="text-lg font-medium text-foreground hover:text-omnigen-purple"
             onClick={() => setIsOpen(false)}
           >
             About Us
