@@ -24,7 +24,7 @@ const team = [
     name: "Rama chandra Rao",
     role: "Managing Director",
     bio: "50 years of experience in running successful business",
-    image: "/Ramachandra Rao.jpeg"
+    image: "/Rama chandra Rao.jpeg"
   }
 ];
 
