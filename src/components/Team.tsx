@@ -3,27 +3,27 @@ import { Linkedin, Twitter, Mail } from "lucide-react";
 
 const team = [
   {
-    name: "Dr. Emily Chen",
-    role: "Chief AI Officer & Co-Founder",
-    bio: "Former lead researcher at Stanford's AI Lab with 15+ years of experience in machine learning and neural networks.",
+    name: "Naga Subramanyam M",
+    role: "Founder",
+    bio: "Expert in building products that solve business problems",
     image: "https://randomuser.me/api/portraits/women/23.jpg"
   },
   {
-    name: "David Rodriguez",
-    role: "CEO & Co-Founder",
-    bio: "Serial entrepreneur with 3 successful tech exits. Visionary leader focused on AI's transformative potential.",
+    name: "Sravika",
+    role: "COO",
+    bio: "Marketing and Finance",
     image: "https://randomuser.me/api/portraits/men/42.jpg"
   },
   {
-    name: "Dr. James Wilson",
-    role: "Head of Research",
+    name: "Rithvik",
+    role: "Human Resources",
     bio: "PhD in Computational Linguistics with groundbreaking work in natural language processing and sentiment analysis.",
     image: "https://randomuser.me/api/portraits/men/32.jpg"
   },
   {
-    name: "Sophia Patel",
-    role: "VP of Engineering",
-    bio: "20 years of software architecture experience specializing in scalable AI systems and cloud infrastructure.",
+    name: "Rama chandra Rao",
+    role: "Managing Director",
+    bio: "50 years of experience in running successful business",
     image: "https://randomuser.me/api/portraits/women/65.jpg"
   }
 ];
