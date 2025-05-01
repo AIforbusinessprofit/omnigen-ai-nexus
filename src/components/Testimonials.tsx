@@ -69,7 +69,7 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
-
+        {/*
         <div className="mt-16 pt-10 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center">
           <img src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" className="h-8 opacity-50 hover:opacity-80 transition-opacity" />
           <img src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage" className="h-8 opacity-50 hover:opacity-80 transition-opacity" />
@@ -78,6 +78,7 @@ const Testimonials = () => {
           <img src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg" alt="Workcation" className="h-8 opacity-50 hover:opacity-80 transition-opacity" />
           <img src="https://tailwindui.com/img/logos/laravel-logo-gray-400.svg" alt="Laravel" className="h-8 opacity-50 hover:opacity-80 transition-opacity" />
         </div>
+        */}
       </div>
     </section>
   );
