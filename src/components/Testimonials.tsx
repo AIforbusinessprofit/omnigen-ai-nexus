@@ -3,24 +3,44 @@ import { cn } from "@/lib/utils";
 
 const testimonials = [
   {
-    quote: "Omnigen AI's platform has revolutionized our approach to customer analytics. We've seen a 42% increase in customer retention since implementation.",
-    author: "Sarah Chen",
-    title: "CTO, Global Retail Inc.",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg"
+    name: "Satish Kumar Pannerselvan",
+    company: "Sports Turf",
+    quote:
+      "SocialBoost helped us go from inconsistent Instagram posts to daily content that actually drives footfall. We now get 30% more inbound calls thanks to automated DM replies!",
   },
   {
-    quote: "The predictive capabilities of Omnigen's algorithms are nothing short of remarkable. They've helped us anticipate market changes weeks before our competitors.",
-    author: "Michael Rodriguez",
-    title: "Director of Innovation, FinTech Solutions",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg"
+    name: "Karthik",
+    company: "Doctor",
+    quote:
+      "Omnigen AI’s voice agent ensures we never miss a client inquiry—even after office hours. It books consultations and answers FAQs with amazing accuracy.",
   },
   {
-    quote: "Working with Omnigen AI has transformed our manufacturing processes. Their systems identified inefficiencies we never knew existed.",
-    author: "James Wilson",
-    title: "VP Operations, Advanced Manufacturing Co.",
-    avatar: "https://randomuser.me/api/portraits/men/67.jpg"
-  }
+    name: "Chinna Babu",
+    company: "Restaurant",
+    quote:
+      "Leads used to fall through the cracks—especially weekends. Now our AI agent handles queries, trials, and even follow-ups! Truly a game changer.",
+  },
 ];
+
+export default function Testimonials() {
+  return (
+    <section id="testimonials" className="py-16 bg-white text-gray-900">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold mb-8 text-center">What Our Users Are Saying</h2>
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {testimonials.map((t, i) => (
+            <div key={i} className="bg-gray-100 p-6 rounded-lg shadow-md">
+              <p className="italic text-lg text-gray-800">“{t.quote}”</p>
+              <div className="mt-4 font-semibold text-indigo-700">{t.name}</div>
+              <div className="text-sm text-gray-600">{t.company}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 
 const Testimonials = () => {
   return (
