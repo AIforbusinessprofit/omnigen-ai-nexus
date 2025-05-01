@@ -74,7 +74,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold mb-1">Phone</h4>
-                    <p className="text-gray-600">+1 (800) 555-0123</p>
+                    <p className="text-gray-600">+91 9966932341</p>
                   </div>
                 </div>
                 
@@ -84,7 +84,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold mb-1">Email</h4>
-                    <p className="text-gray-600">info@omnigenai.com</p>
+                    <p className="text-gray-600">contact@omnigenai.io</p>
                   </div>
                 </div>
               </div>
