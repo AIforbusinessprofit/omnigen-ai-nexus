@@ -39,11 +39,11 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-6">Solutions</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Machine Learning</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">MSME Process Automation</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Predictive Analytics</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Natural Language Processing</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Voice Agents</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Computer Vision</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Generative AI</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Local LLM's</a></li>
             </ul>
           </div>
           
