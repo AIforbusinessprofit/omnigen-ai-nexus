@@ -12,19 +12,19 @@ const team = [
     name: "Sravika",
     role: "COO",
     bio: "Marketing and Finance",
-    image: "https://randomuser.me/api/portraits/men/42.jpg"
+    image: "/Sravika.jpeg"
   },
   {
     name: "Rithvik",
     role: "Human Resources",
     bio: "PhD in Computational Linguistics with groundbreaking work in natural language processing and sentiment analysis.",
-    image: "https://randomuser.me/api/portraits/men/32.jpg"
+    image: "/Rithvik.jpeg"
   },
   {
     name: "Rama chandra Rao",
     role: "Managing Director",
     bio: "50 years of experience in running successful business",
-    image: "https://randomuser.me/api/portraits/women/65.jpg"
+    image: "/Ramachandra Rao.jpeg"
   }
 ];
 
