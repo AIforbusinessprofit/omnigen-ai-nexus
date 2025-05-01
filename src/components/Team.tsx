@@ -6,7 +6,7 @@ const team = [
     name: "Naga Subramanyam M",
     role: "Founder",
     bio: "Expert in building products that solve business problems",
-    image: "https://randomuser.me/api/portraits/women/23.jpg"
+    image: "/Naga Subramanyam.jpeg"
   },
   {
     name: "Sravika",
