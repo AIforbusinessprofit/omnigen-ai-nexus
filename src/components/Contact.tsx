@@ -62,8 +62,8 @@ const Contact = () => {
                   <div>
                     <h4 className="text-lg font-semibold mb-1">Headquarters</h4>
                     <p className="text-gray-600">
-                      123 Innovation Drive, Suite 400<br />
-                      Palo Alto, CA 94301
+                      Pattabhipuram 3rd lane extension<br />
+                      Guntur, 522006
                     </p>
                   </div>
                 </div>
