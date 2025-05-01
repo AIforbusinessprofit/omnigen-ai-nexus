@@ -31,34 +31,34 @@ const values = [
 
 const milestones = [
   {
-    year: "2018",
+    year: "2025 April 12",
     title: "Omnigen AI Founded",
-    description: "Started with a team of 5 AI researchers from Stanford and MIT."
+    description: "Started with a team of 4 "
   },
   {
-    year: "2019",
-    title: "First Enterprise Client",
-    description: "Secured partnership with Fortune 500 healthcare provider."
+    year: "2025 April 30",
+    title: "First AI voice agent built",
+    description: "Appreciation from friends and family"
   },
   {
-    year: "2020",
-    title: "ML Patent Approval",
-    description: "Groundbreaking algorithm for minimal-data learning approved."
+    year: "2025 April 30",
+    title: "Email id setup done",
+    description: "Private mail integration with Gmail"
   },
   {
-    year: "2021",
-    title: "Series A Funding",
-    description: "$28M in funding to expand research and development."
+    year: "2025 May 1",
+    title: "Website deployment",
+    description: "In house developed website"
   },
   {
-    year: "2022",
+    year: "2025 May 1",
     title: "Global Expansion",
-    description: "Opened offices in London, Singapore, and Toronto."
+    description: "Google Analytics, SEO setup done"
   },
   {
-    year: "2023",
-    title: "100+ Enterprise Clients",
-    description: "Reached milestone of 100+ enterprise implementations."
+    year: "2025 May 2",
+    title: "Website content updated to original",
+    description: "Now planning to reach thousands of customers and acquire them"
   }
 ];
 
@@ -88,13 +88,13 @@ const AboutPage = () => {
                   Our <span className="gradient-text">Story</span>
                 </h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  Founded in 2018 by a team of AI researchers from Stanford and MIT, Omnigen AI was born from a simple yet powerful belief: artificial intelligence should be accessible, practical, and transformative for businesses of all sizes.
+                  Founded in 2025 to enable MSME sector with the efficiency and capability of AI
                 </p>
                 <p className="text-lg text-gray-600 mb-6">
                   What began as a research project to develop more efficient algorithms has evolved into a comprehensive AI solutions provider serving clients across healthcare, finance, manufacturing, and retail sectors worldwide.
                 </p>
                 <p className="text-lg text-gray-600">
-                  Today, with offices in San Francisco, London, Singapore, and Toronto, our team of 125+ AI specialists continues to pioneer innovations that make advanced AI capabilities accessible and impactful for organizations globally.
+                  Today, with offices in Guntur, we would love expand globally.
                 </p>
               </div>
               
