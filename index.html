@@ -3,261 +3,433 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bizwinner — The Revenue Integrity Layer</title>
-<meta name="description" content="Bizwinner detects revenue decay before it hits your forecast. Revenue protection, 19 days before the damage is done.">
+
+<!-- ═══ PRIMARY SEO ═══ -->
+<title>Bizwinner — Revenue Decay Detection. 19 Days Before Your CRM Knows.</title>
+<meta name="description" content="Bizwinner detects silent revenue decay 19 days before your CRM does. The independent signal layer built for CROs, CFOs, CEOs, and investors who can't afford forecast surprises. Mid-market B2B SaaS.">
+<meta name="keywords" content="revenue decay detection, pipeline risk, CRM blind spots, forecast accuracy, B2B SaaS revenue intelligence, deal risk software, revenue protection, sales pipeline monitoring, CRO tools, CFO revenue visibility">
+<link rel="canonical" href="https://www.omnigenai.io">
+<meta name="robots" content="index, follow">
+<meta name="author" content="OmnigenAI">
+
+<!-- ═══ OPEN GRAPH — Tuned for LinkedIn card previews ═══ -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.omnigenai.io">
+<meta property="og:title" content="Revenue dies 19 days before your forecast knows it — Bizwinner">
+<meta property="og:description" content="Your CRM says the pipeline is healthy. Bizwinner reads the buyer signals your CRM was never built to track. Revenue protection, 19 days before the damage is done.">
+<meta property="og:image" content="https://www.omnigenai.io/og-image.png">
+<meta property="og:site_name" content="Bizwinner by OmnigenAI">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bizwinner — Revenue protection, 19 days before the damage is done.">
+<meta name="twitter:description" content="The signal layer that sees what CRMs miss. Built for CROs, CFOs, CEOs and investors.">
+
+<!-- ═══ JSON-LD: Organization + SoftwareApplication + FAQ (AEO + LLM Discovery) ═══ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.omnigenai.io/#org",
+      "name": "OmnigenAI",
+      "url": "https://www.omnigenai.io",
+      "description": "OmnigenAI builds Bizwinner — revenue decay detection software for mid-market B2B SaaS companies. Bizwinner surfaces buyer-behavior signals 19 days before CRM stage changes.",
+      "founder": { "@type": "Person", "name": "Naga", "jobTitle": "Founder & CEO" },
+      "contactPoint": { "@type": "ContactPoint", "email": "naga@omnigenai.io", "contactType": "Sales" },
+      "sameAs": ["https://www.linkedin.com/company/omnigenai"]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Bizwinner",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "Bizwinner is a revenue decay detection platform. It tracks 23 buyer-behavior signals across engagement, stakeholder, and timeline dimensions to alert revenue teams an average of 19 days before CRM stage changes. It is a read-only layer that sits on top of Salesforce, HubSpot, Outreach, and Gong without disrupting existing workflows.",
+      "provider": { "@id": "https://www.omnigenai.io/#org" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is revenue decay detection?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Revenue decay detection monitors buyer behavior signals — not rep-logged activity — to identify at-risk B2B deals before they fail. Unlike CRM stage changes, which are recorded after the fact by reps, decay detection tracks buyer silence, stakeholder disengagement, procurement stalls, and competitor signals in real time. Bizwinner detects these signals an average of 19 days before your CRM reflects them." }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my CRM always show a healthy pipeline until it is too late?",
+          "acceptedAnswer": { "@type": "Answer", "text": "CRMs are rep-reported systems. A rep updates a stage when they decide to — not when the buyer disengages. When your champion goes silent, procurement stalls, or a competitor enters, none of that is automatically captured. The result is a structural 19-day lag between when a deal starts dying and when your forecast reflects it. Bizwinner fills that gap with an independent, buyer-behavior-based signal layer." }
+        },
+        {
+          "@type": "Question",
+          "name": "How can a CRO improve forecast accuracy?",
+          "acceptedAnswer": { "@type": "Answer", "text": "CRM-based forecasting relies on rep-reported stage data that systematically lags buyer reality. To improve forecast accuracy, CROs need an independent signal layer that reads buyer behavior directly — tracking engagement decay, stakeholder risk, and timeline drift in real time. Bizwinner flags decay events an average of 19 days before stage changes occur, giving revenue teams a meaningful intervention window." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Bizwinner replace a CRM?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Bizwinner is a read-only signal layer that sits on top of your existing CRM, email, and engagement tools. It does not replace Salesforce, HubSpot, or any existing system. No workflow changes. No rep adoption required. No IT involvement." }
+        },
+        {
+          "@type": "Question",
+          "name": "How do PE firms and investors use revenue decay detection?",
+          "acceptedAnswer": { "@type": "Answer", "text": "PE firms and investors use Bizwinner to establish independent pipeline health monitoring across portfolio companies — providing a signal layer that does not depend on management's CRM data. During due diligence, forecast accuracy and pipeline conversion rates directly impact valuation. Bizwinner improves forecast discipline and surfaces revenue risk early, providing verifiable signal for board-level reporting." }
+        },
+        {
+          "@type": "Question",
+          "name": "Are the projected results on this site from real customers?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Not yet — and we say so clearly. All projected outcomes ($4.2M recoverable revenue, ~54% save rate) come from a virtual pilot: Bizwinner's detection algorithm run against 240 deal patterns from Clari, Gong, and Pavilion benchmark datasets. These are model projections. We will only publish verified numbers once design partners run Bizwinner against live pipelines and consent to sharing results." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
 <style>
   :root {
     --ink: #0a0c10;
+    --ink2: #0d1018;
     --white: #f0ede8;
     --blue: #1a56ff;
-    --blue-dim: rgba(26,86,255,0.12);
+    --blue-bright: #2a65ff;
+    --blue-dim: rgba(26,86,255,0.1);
     --red: #e8251a;
-    --red-dim: rgba(232,37,26,0.15);
-    --mid: #1c2030;
-    --border: rgba(240,237,232,0.08);
+    --red-dim: rgba(232,37,26,0.12);
+    --mid: #141825;
+    --mid2: #1c2030;
+    --border: rgba(240,237,232,0.07);
+    --border2: rgba(240,237,232,0.13);
     --muted: rgba(240,237,232,0.38);
+    --muted2: rgba(240,237,232,0.58);
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
-  body { font-family: 'Syne', sans-serif; background: var(--ink); color: var(--white); overflow-x: hidden; }
+  body { font-family: 'Syne', sans-serif; background: var(--ink); color: var(--white); overflow-x: hidden; line-height: 1; }
+
+  /* ─── NOISE OVERLAY ─── */
+  body::after { content: ''; position: fixed; inset: 0; pointer-events: none; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E"); opacity: 0.45; z-index: 1000; mix-blend-mode: overlay; }
 
   /* ─── SCROLL PROGRESS ─── */
-  #progress-bar { position: fixed; top: 0; left: 0; height: 2px; width: 0%; background: var(--blue); z-index: 200; transition: width 0.1s linear; }
+  #progress-bar { position: fixed; top: 0; left: 0; height: 2px; width: 0%; background: var(--blue); z-index: 500; }
 
   /* ─── NAV ─── */
-  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 20px 48px; background: rgba(10,12,16,0.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); }
-  .nav-logo { font-size: 15px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); cursor: pointer; text-decoration: none; }
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; padding: 0 48px; height: 64px; background: rgba(10,12,16,0.94); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+  .nav-logo { font-size: 14px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--white); text-decoration: none; }
   .nav-logo span { color: var(--blue); }
   .nav-links { display: flex; align-items: center; }
-  nav a.nav-link { font-size: 13px; color: var(--muted); text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase; margin-left: 36px; transition: color 0.2s; }
+  nav a.nav-link { font-size: 11px; color: var(--muted); text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; margin-left: 32px; transition: color 0.2s; }
   nav a.nav-link:hover { color: var(--white); }
-  .nav-cta { margin-left: 36px; padding: 9px 22px; background: var(--blue); color: var(--white); border-radius: 3px; font-weight: 700; letter-spacing: 0.06em; border: none; cursor: pointer; font-family: 'Syne', sans-serif; font-size: 13px; text-transform: uppercase; transition: background 0.15s, transform 0.15s; }
-  .nav-cta:hover { background: #2a65ff; transform: translateY(-1px); }
-  .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; margin-left: 16px; background: none; border: none; }
+  .nav-cta { margin-left: 28px; padding: 9px 22px; background: var(--blue); color: var(--white); border-radius: 2px; font-weight: 700; letter-spacing: 0.08em; border: none; cursor: pointer; font-family: 'Syne', sans-serif; font-size: 11px; text-transform: uppercase; transition: background 0.15s, transform 0.15s; }
+  .nav-cta:hover { background: var(--blue-bright); transform: translateY(-1px); }
+  .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
   .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--white); transition: 0.3s; border-radius: 1px; }
   .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .nav-hamburger.open span:nth-child(2) { opacity: 0; }
   .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-  .mobile-menu { display: none; position: fixed; top: 65px; left: 0; right: 0; bottom: 0; background: rgba(10,12,16,0.98); backdrop-filter: blur(20px); z-index: 99; flex-direction: column; align-items: center; justify-content: center; gap: 32px; }
+  .mobile-menu { display: none; position: fixed; top: 64px; left: 0; right: 0; bottom: 0; background: rgba(10,12,16,0.98); backdrop-filter: blur(20px); z-index: 199; flex-direction: column; align-items: center; justify-content: center; gap: 0; }
   .mobile-menu.open { display: flex; }
-  .mobile-menu a { font-size: 20px; color: var(--muted); text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
+  .mobile-menu a { font-size: 18px; color: var(--muted); text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; padding: 22px 0; border-bottom: 1px solid var(--border); width: 100%; text-align: center; transition: color 0.2s; }
   .mobile-menu a:hover { color: var(--white); }
-  .mobile-menu .m-cta { margin-top: 16px; padding: 16px 40px; background: var(--blue); color: var(--white) !important; border-radius: 3px; font-weight: 700; font-size: 16px; }
+  .mobile-menu .m-cta { background: var(--blue); color: var(--white) !important; font-weight: 700; margin-top: 32px; padding: 18px 48px; border-radius: 2px; width: auto; border: none; }
 
   /* ─── MODAL ─── */
-  .modal-overlay { display: none; position: fixed; inset: 0; z-index: 300; background: rgba(10,12,16,0.92); backdrop-filter: blur(12px); align-items: center; justify-content: center; padding: 24px; }
+  .modal-overlay { display: none; position: fixed; inset: 0; z-index: 400; background: rgba(10,12,16,0.95); backdrop-filter: blur(16px); align-items: center; justify-content: center; padding: 20px; }
   .modal-overlay.open { display: flex; }
-  .modal-box { background: #13161e; border: 1px solid rgba(26,86,255,0.25); border-radius: 6px; width: 100%; max-width: 540px; padding: 48px; position: relative; animation: modalIn 0.3s ease; max-height: 90vh; overflow-y: auto; }
-  @keyframes modalIn { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:none; } }
-  .modal-close { position: absolute; top: 20px; right: 20px; width: 32px; height: 32px; border: 1px solid var(--border); border-radius: 50%; background: transparent; color: var(--muted); font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: color 0.2s, border-color 0.2s; line-height: 1; }
-  .modal-close:hover { color: var(--white); border-color: rgba(240,237,232,0.3); }
-  .modal-eyebrow { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--blue); margin-bottom: 12px; }
-  .modal-title { font-size: 26px; font-weight: 800; line-height: 1.15; margin-bottom: 8px; }
-  .modal-sub { font-size: 14px; color: var(--muted); line-height: 1.65; margin-bottom: 32px; }
-  .form-group { margin-bottom: 20px; }
-  .form-group label { display: block; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
-  .form-group input, .form-group select, .form-group textarea { width: 100%; background: rgba(240,237,232,0.04); border: 1px solid var(--border); border-radius: 3px; padding: 12px 16px; color: var(--white); font-family: 'Syne', sans-serif; font-size: 14px; transition: border-color 0.2s, background 0.2s; outline: none; -webkit-appearance: none; appearance: none; }
-  .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(240,237,232,0.2); }
-  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--blue); background: rgba(26,86,255,0.06); }
-  .form-group select option { background: #13161e; color: var(--white); }
-  .form-group textarea { resize: vertical; min-height: 80px; line-height: 1.5; }
-  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  .form-submit { width: 100%; padding: 16px; background: var(--blue); color: var(--white); border: none; border-radius: 3px; font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; transition: background 0.15s, transform 0.15s; margin-top: 8px; }
-  .form-submit:hover { background: #2a65ff; transform: translateY(-1px); }
-  .form-submit:disabled { background: rgba(26,86,255,0.4); cursor: not-allowed; transform: none; }
-  .form-note { margin-top: 16px; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.05em; color: rgba(240,237,232,0.22); text-align: center; line-height: 1.8; }
-  .form-success { display: none; text-align: center; padding: 32px 0; }
-  .form-success .success-icon { font-size: 52px; color: var(--blue); margin-bottom: 20px; display: block; }
-  .form-success h3 { font-size: 24px; font-weight: 800; margin-bottom: 10px; }
-  .form-success p { color: var(--muted); font-size: 15px; line-height: 1.65; }
+  .modal-box { background: #111520; border: 1px solid rgba(26,86,255,0.2); border-top: 2px solid var(--blue); border-radius: 3px; width: 100%; max-width: 530px; padding: 48px; position: relative; animation: modalIn 0.25s ease; max-height: 92vh; overflow-y: auto; }
+  @keyframes modalIn { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:none; } }
+  .modal-close { position: absolute; top: 18px; right: 18px; width: 30px; height: 30px; border: 1px solid var(--border2); border-radius: 2px; background: transparent; color: var(--muted); font-size: 16px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+  .modal-close:hover { color: var(--white); background: rgba(240,237,232,0.05); }
+  .modal-eyebrow { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--blue); margin-bottom: 10px; }
+  .modal-title { font-size: 26px; font-weight: 800; line-height: 1.1; margin-bottom: 8px; }
+  .modal-sub { font-size: 14px; color: var(--muted); line-height: 1.65; margin-bottom: 28px; }
+  .form-group { margin-bottom: 16px; }
+  .form-group label { display: block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 7px; }
+  .form-group input, .form-group select, .form-group textarea { width: 100%; background: rgba(240,237,232,0.035); border: 1px solid var(--border2); border-radius: 2px; padding: 11px 14px; color: var(--white); font-family: 'Syne', sans-serif; font-size: 14px; transition: border-color 0.2s, background 0.2s; outline: none; -webkit-appearance: none; appearance: none; }
+  .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(240,237,232,0.18); }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--blue); background: rgba(26,86,255,0.05); }
+  .form-group select option { background: #111520; color: var(--white); }
+  .form-group textarea { resize: vertical; min-height: 72px; line-height: 1.55; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .form-submit { width: 100%; padding: 14px; background: var(--blue); color: var(--white); border: none; border-radius: 2px; font-family: 'Syne', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: background 0.15s, transform 0.15s; margin-top: 6px; }
+  .form-submit:hover { background: var(--blue-bright); transform: translateY(-1px); }
+  .form-submit:disabled { background: rgba(26,86,255,0.35); cursor: not-allowed; transform: none; }
+  .form-note { margin-top: 14px; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.05em; color: rgba(240,237,232,0.2); text-align: center; line-height: 1.9; }
+  .form-success { display: none; text-align: center; padding: 40px 0; }
+  .form-success .success-icon { font-size: 44px; color: var(--blue); margin-bottom: 20px; display: block; }
+  .form-success h3 { font-size: 22px; font-weight: 800; margin-bottom: 10px; }
+  .form-success p { color: var(--muted); font-size: 14px; line-height: 1.7; }
 
   /* ─── BUTTONS ─── */
-  .btn-primary { display: inline-block; padding: 16px 36px; background: var(--blue); color: var(--white); font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; border-radius: 3px; transition: transform 0.15s, background 0.15s; border: none; cursor: pointer; }
-  .btn-primary:hover { background: #2a65ff; transform: translateY(-1px); }
-  .btn-ghost { display: inline-block; padding: 16px 28px; color: var(--muted); font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; border: 1px solid var(--border); border-radius: 3px; transition: color 0.2s, border-color 0.2s; cursor: pointer; background: transparent; font-family: 'Syne', sans-serif; }
-  .btn-ghost:hover { color: var(--white); border-color: rgba(240,237,232,0.25); }
+  .btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 15px 36px; background: var(--blue); color: var(--white); font-family: 'Syne', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: transform 0.15s, background 0.15s; border: none; cursor: pointer; }
+  .btn-primary:hover { background: var(--blue-bright); transform: translateY(-1px); }
+  .btn-ghost { display: inline-flex; align-items: center; gap: 8px; padding: 15px 28px; color: var(--muted2); font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; border: 1px solid var(--border2); border-radius: 2px; transition: color 0.2s, border-color 0.2s; cursor: pointer; background: transparent; font-family: 'Syne', sans-serif; }
+  .btn-ghost:hover { color: var(--white); border-color: rgba(240,237,232,0.28); }
+  .btn-linkedin { display: inline-flex; align-items: center; gap: 10px; padding: 12px 22px; color: var(--muted2); font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; border: 1px solid var(--border2); border-radius: 2px; transition: all 0.2s; font-family: 'DM Mono', monospace; }
+  .btn-linkedin:hover { color: #0a66c2; border-color: #0a66c2; background: rgba(10,102,194,0.06); }
+  .btn-linkedin svg { width: 13px; height: 13px; fill: currentColor; flex-shrink: 0; }
 
   /* ─── HERO ─── */
   #hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 140px 48px 80px; position: relative; overflow: hidden; }
-  .hero-eyebrow { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--blue); margin-bottom: 28px; }
-  .hero-h1 { font-size: clamp(54px, 7vw, 96px); font-weight: 800; line-height: 1.0; letter-spacing: -0.02em; max-width: 820px; position: relative; z-index: 2; }
-  .hero-h1 em { font-family: 'Instrument Serif', serif; font-style: italic; }
-  .hero-h1 .strike-wrap { position: relative; display: inline-block; color: rgba(240,237,232,0.22); }
-  .hero-h1 .strike-wrap::after { content: ''; position: absolute; top: 52%; left: -2px; right: -2px; height: 3px; background: var(--red); animation: strikeIn 0.6s 1.2s ease forwards; transform: scaleX(0); transform-origin: left; }
+
+  /* Subtle red radial bottom-left — deal dying metaphor */
+  #hero::before { content: ''; position: absolute; bottom: -120px; left: -80px; width: 560px; height: 560px; background: radial-gradient(ellipse, rgba(232,37,26,0.055) 0%, transparent 68%); pointer-events: none; z-index: 0; }
+
+  /* Audience strip */
+  .audience-strip { display: flex; align-items: center; gap: 0; margin-bottom: 36px; flex-wrap: wrap; }
+  .audience-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,237,232,0.25); margin-right: 14px; white-space: nowrap; }
+  .audience-pill { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; padding: 5px 11px; border: 1px solid var(--border); margin-right: 5px; margin-bottom: 5px; border-radius: 1px; white-space: nowrap; color: rgba(240,237,232,0.3); }
+  .audience-pill.lit { color: var(--white); border-color: var(--border2); background: rgba(240,237,232,0.04); }
+
+  .hero-eyebrow { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--blue); margin-bottom: 28px; display: flex; align-items: center; gap: 10px; position: relative; z-index: 2; }
+  .hero-eyebrow::before { content: ''; display: inline-block; width: 28px; height: 1px; background: var(--blue); }
+  .hero-h1 { font-size: clamp(56px, 7.2vw, 100px); font-weight: 800; line-height: 0.97; letter-spacing: -0.025em; max-width: 840px; position: relative; z-index: 2; }
+  .hero-h1 em { font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; }
+  .hero-h1 .strike-wrap { position: relative; display: inline-block; color: rgba(240,237,232,0.2); }
+  .hero-h1 .strike-wrap::after { content: ''; position: absolute; top: 53%; left: -3px; right: -3px; height: 4px; background: var(--red); animation: strikeIn 0.55s 1.3s cubic-bezier(0.16,1,0.3,1) forwards; transform: scaleX(0); transform-origin: left; border-radius: 1px; }
   @keyframes strikeIn { to { transform: scaleX(1); } }
-  .hero-sub { margin-top: 32px; font-size: 20px; color: var(--muted); max-width: 520px; line-height: 1.65; font-weight: 400; position: relative; z-index: 2; }
-  .hero-actions { margin-top: 48px; display: flex; gap: 16px; align-items: center; position: relative; z-index: 2; flex-wrap: wrap; }
-  .hero-viz { position: absolute; right: -40px; top: 50%; transform: translateY(-50%); width: 55vw; opacity: 0.82; z-index: 1; pointer-events: none; }
-  #decay-path { stroke-dasharray: 900; stroke-dashoffset: 900; animation: drawLine 2s 0.5s ease forwards; }
-  #decay-path-2 { stroke-dasharray: 900; stroke-dashoffset: 900; animation: drawLine 2s 0.9s ease forwards; }
+  .hero-sub { margin-top: 36px; font-size: 20px; color: var(--muted); max-width: 520px; line-height: 1.65; font-weight: 400; position: relative; z-index: 2; }
+  .hero-sub strong { color: var(--white); font-weight: 700; }
+  .hero-actions { margin-top: 48px; display: flex; gap: 14px; align-items: center; position: relative; z-index: 2; flex-wrap: wrap; }
+
+  /* Hero decay chart — SVG path animation */
+  .hero-viz { position: absolute; right: -20px; top: 50%; transform: translateY(-52%); width: 54vw; opacity: 0.85; z-index: 1; pointer-events: none; }
+  #decay-path { stroke-dasharray: 950; stroke-dashoffset: 950; animation: drawLine 2.2s 0.5s cubic-bezier(0.16,1,0.3,1) forwards; }
+  #crm-path { stroke-dasharray: 900; stroke-dashoffset: 900; animation: drawLine 2.2s 0.9s cubic-bezier(0.16,1,0.3,1) forwards; }
   @keyframes drawLine { to { stroke-dashoffset: 0; } }
-  .hero-stat-band { margin-top: 72px; display: flex; gap: 0; border-top: 1px solid var(--border); padding-top: 40px; position: relative; z-index: 2; }
-  .hstat { flex: 1; padding-right: 48px; border-right: 1px solid var(--border); margin-right: 48px; }
+
+  .hero-stat-band { margin-top: 72px; display: grid; grid-template-columns: repeat(4,1fr); border-top: 1px solid var(--border); position: relative; z-index: 2; }
+  .hstat { padding: 40px 40px 0 0; border-right: 1px solid var(--border); margin-right: 40px; }
   .hstat:last-child { border-right: none; margin-right: 0; padding-right: 0; }
-  .hstat-num { font-size: 42px; font-weight: 800; letter-spacing: -0.02em; color: var(--white); line-height: 1; }
+  .hstat-num { font-size: clamp(36px, 3.6vw, 50px); font-weight: 800; letter-spacing: -0.02em; color: var(--white); line-height: 1; }
   .hstat-num.red { color: var(--red); }
   .hstat-num.blue { color: var(--blue); }
-  .hstat-label { margin-top: 10px; font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase; line-height: 1.5; }
-  .hstat-label .src { display: block; font-size: 9px; letter-spacing: 0.07em; color: rgba(240,237,232,0.2); margin-top: 4px; }
+  .hstat-label { margin-top: 10px; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase; line-height: 1.55; }
+  .hstat-label .src { display: block; font-size: 8px; letter-spacing: 0.06em; color: rgba(240,237,232,0.18); margin-top: 5px; }
 
-  /* ─── SECTION BASE ─── */
-  section { padding: 120px 48px; }
-  .section-label { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--blue); margin-bottom: 20px; }
-  h2 { font-size: clamp(36px, 4.5vw, 60px); font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; }
+  /* ─── SECTIONS BASE ─── */
+  section { padding: 120px 48px; position: relative; }
+  .section-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--blue); margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+  .section-label::before { content: ''; display: inline-block; width: 20px; height: 1px; background: var(--blue); }
+  h2 { font-size: clamp(36px, 4.5vw, 62px); font-weight: 800; line-height: 1.03; letter-spacing: -0.022em; }
 
   /* ─── PARADOX ─── */
-  #paradox { background: var(--mid); border-top: 1px solid var(--border); }
+  #paradox { background: var(--mid); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
   .paradox-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin-top: 64px; align-items: start; }
-  .paradox-col h3 { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 36px; color: var(--muted); }
-  .bar-row { margin-bottom: 24px; }
-  .bar-label { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
-  .bar-value { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
-  .bar-track { height: 5px; background: rgba(240,237,232,0.06); border-radius: 2px; overflow: hidden; }
-  .bar-fill { height: 100%; background: rgba(240,237,232,0.28); border-radius: 2px; transform: scaleX(0); transform-origin: left; animation: barGrow 1.2s ease forwards; }
-  .bar-fill.b60 { animation-delay: 0.2s; } .bar-fill.b80 { animation-delay: 0.4s; } .bar-fill.b100 { animation-delay: 0.6s; }
+  .paradox-col h3 { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 36px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+  .paradox-col h3.up { color: rgba(240,237,232,0.3); }
+  .paradox-col h3.dn { color: var(--red); }
+  .bar-row { margin-bottom: 28px; }
+  .bar-meta { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+  .bar-label { font-size: 13px; color: var(--muted); }
+  .bar-value { font-size: 14px; font-weight: 700; font-family: 'DM Mono', monospace; letter-spacing: -0.01em; }
+  .bar-track { height: 4px; background: rgba(240,237,232,0.05); border-radius: 1px; overflow: hidden; }
+  .bar-fill { height: 100%; background: rgba(240,237,232,0.22); border-radius: 1px; transform: scaleX(0); transform-origin: left; }
+  .bar-fill.anim { animation: barGrow 1.4s 0.3s cubic-bezier(0.16,1,0.3,1) forwards; }
   @keyframes barGrow { to { transform: scaleX(1); } }
-  .decline-row { margin-bottom: 32px; }
-  .decline-metric { font-size: 11px; font-family: 'DM Mono', monospace; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+  .decline-row { margin-bottom: 36px; padding-bottom: 36px; border-bottom: 1px solid var(--border); }
+  .decline-row:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .decline-metric { font-size: 10px; font-family: 'DM Mono', monospace; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
   .decline-numbers { display: flex; align-items: center; gap: 12px; }
-  .decline-old { font-size: 22px; font-weight: 700; color: rgba(240,237,232,0.3); }
-  .decline-arrow { font-size: 16px; color: rgba(240,237,232,0.2); }
-  .decline-new { font-size: 32px; font-weight: 800; color: var(--red); letter-spacing: -0.02em; }
-  .decline-pct { font-family: 'DM Mono', monospace; font-size: 11px; padding: 4px 10px; background: var(--red-dim); border: 1px solid rgba(232,37,26,0.3); border-radius: 2px; color: var(--red); letter-spacing: 0.06em; }
+  .decline-old { font-size: 20px; font-weight: 700; color: rgba(240,237,232,0.25); }
+  .decline-arrow { font-size: 14px; color: rgba(240,237,232,0.15); }
+  .decline-new { font-size: 42px; font-weight: 800; color: var(--red); letter-spacing: -0.025em; line-height: 1; }
+  .decline-pct { font-family: 'DM Mono', monospace; font-size: 10px; padding: 4px 10px; background: var(--red-dim); border: 1px solid rgba(232,37,26,0.22); border-radius: 1px; color: var(--red); letter-spacing: 0.06em; }
 
   /* ─── BLIND SPOT ─── */
-  #blind-spot { border-top: 1px solid var(--border); }
-  .blindspot-headline { font-size: clamp(40px, 5vw, 72px); font-weight: 800; line-height: 1.0; letter-spacing: -0.025em; max-width: 760px; margin-top: 16px; }
+  #blind-spot { border-bottom: 1px solid var(--border); }
+  .blindspot-headline { font-size: clamp(44px, 5.8vw, 80px); font-weight: 800; line-height: 0.96; letter-spacing: -0.028em; max-width: 720px; margin-top: 16px; }
   .blindspot-headline .num-red { color: var(--red); }
-  .blindspot-impact { margin-top: 80px; padding: 40px 48px; background: rgba(232,37,26,0.05); border: 1px solid rgba(232,37,26,0.15); border-radius: 4px; display: flex; gap: 56px; align-items: center; flex-wrap: wrap; }
-  .bi-stat .num { font-size: 48px; font-weight: 800; color: var(--red); line-height: 1; letter-spacing: -0.02em; }
-  .bi-stat .desc { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase; margin-top: 8px; max-width: 130px; line-height: 1.6; }
-  .bi-divider { width: 1px; background: rgba(232,37,26,0.15); align-self: stretch; min-height: 60px; }
-  .bi-quote { font-size: 15px; line-height: 1.75; color: var(--muted); flex: 1; min-width: 240px; }
-  .bi-quote strong { color: var(--white); }
+  .blindspot-headline .dim { color: rgba(240,237,232,0.2); }
 
-  /* ─── HOW IT WORKS ─── */
-  #how { background: var(--mid); border-top: 1px solid var(--border); }
+  /* Timeline diagram */
+  .timeline-diagram { margin: 80px 0 0 160px; position: relative; height: 210px; }
+  .tl-axis-label { position: absolute; left: -155px; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; }
+  .tl-axis-label.reality { top: 32px; color: var(--red); }
+  .tl-axis-label.crm { top: 136px; color: rgba(240,237,232,0.25); }
+  .tl-reality-line { position: absolute; top: 38px; left: 0; right: 0; height: 3px; background: var(--red); border-radius: 1px; }
+  .tl-reality-line::before { content: ''; position: absolute; top: -6px; left: 0; right: 0; height: 14px; background: linear-gradient(to bottom, transparent, rgba(232,37,26,0.08), transparent); }
+  .tl-crm-line { position: absolute; top: 142px; left: 0; right: 0; height: 2px; background: rgba(240,237,232,0.1); border-radius: 1px; border-style: dashed; }
+  /* override for SVG dashed */
+  .tl-crm-svg { position: absolute; top: 134px; left: 0; right: 0; width: 100%; height: 16px; }
+  .tl-event { position: absolute; transform: translateX(-50%); }
+  .tl-event-dot { width: 13px; height: 13px; background: var(--red); border-radius: 50%; border: 2px solid var(--ink); position: relative; margin: 0 auto; }
+  .tl-event-dot::after { content: ''; position: absolute; inset: -5px; border-radius: 50%; background: rgba(232,37,26,0.18); animation: pulse 2s ease infinite; }
+  @keyframes pulse { 0%,100% { transform: scale(1); opacity: 0.5; } 50% { transform: scale(1.8); opacity: 0; } }
+  .tl-event-top { top: 25px; }
+  .tl-event-label { position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%); white-space: nowrap; text-align: center; }
+  .tl-event-label span { display: block; font-size: 12px; font-weight: 700; color: var(--white); line-height: 1.35; }
+  .tl-lag { position: absolute; top: 50px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 3px; }
+  .tl-lag-line { width: 1px; height: 48px; background: rgba(232,37,26,0.25); }
+  .tl-lag-label { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--red); letter-spacing: 0.09em; white-space: nowrap; }
+  .tl-crm-dot-wrap { position: absolute; top: 127px; transform: translateX(-50%); }
+  .tl-crm-dot { width: 11px; height: 11px; background: rgba(240,237,232,0.1); border-radius: 50%; border: 2px solid rgba(240,237,232,0.2); margin: 0 auto; }
+  .tl-crm-label { position: absolute; top: 18px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.09em; }
+  .tl-crm-label.never { color: rgba(232,37,26,0.45); }
+  .tl-crm-label.late { color: rgba(240,237,232,0.25); }
+
+  .blindspot-impact { margin-top: 72px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+  .bi-card { background: var(--ink2); padding: 44px 32px; transition: background 0.2s; }
+  .bi-card:hover { background: #10141e; }
+  .bi-card.alert { background: rgba(232,37,26,0.05); border-bottom: 3px solid var(--red); }
+  .bi-num { font-size: clamp(38px, 3.8vw, 52px); font-weight: 800; color: var(--red); line-height: 1; letter-spacing: -0.025em; }
+  .bi-num.w { color: var(--white); }
+  .bi-num.d { color: rgba(240,237,232,0.28); }
+  .bi-num.bl { color: var(--blue); }
+  .bi-desc { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase; margin-top: 12px; line-height: 1.6; }
+
+  /* ─── HOW ─── */
+  #how { background: var(--mid); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
   .how-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin-top: 64px; align-items: start; }
   .flow-diagram { display: flex; flex-direction: column; }
-  .flow-step { display: flex; align-items: flex-start; gap: 20px; padding: 24px; border: 1px solid var(--border); margin-bottom: -1px; position: relative; transition: border-color 0.2s, background 0.2s; z-index: 0; }
+  .flow-step { display: flex; align-items: flex-start; gap: 20px; padding: 24px 26px; border: 1px solid var(--border); margin-bottom: -1px; position: relative; transition: border-color 0.2s, background 0.2s; z-index: 0; }
   .flow-step:hover { border-color: var(--blue); background: var(--blue-dim); z-index: 1; }
-  .flow-step-num { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--blue); flex-shrink: 0; margin-top: 3px; letter-spacing: 0.1em; }
-  .flow-step-title { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+  .flow-step-num { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--blue); flex-shrink: 0; margin-top: 3px; letter-spacing: 0.1em; }
+  .flow-step-title { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
   .flow-step-desc { font-size: 13px; color: var(--muted); line-height: 1.65; }
-  .how-right h3 { font-size: 26px; font-weight: 800; margin-bottom: 24px; line-height: 1.2; }
-  .check-list { list-style: none; margin-bottom: 40px; }
-  .check-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: var(--muted); margin-bottom: 14px; line-height: 1.55; }
-  .check-list li .icon-check { color: var(--blue); flex-shrink: 0; margin-top: 1px; }
-  .check-list li .icon-x { color: rgba(240,237,232,0.2); flex-shrink: 0; margin-top: 1px; }
+  .how-right h3 { font-size: 24px; font-weight: 800; margin-bottom: 24px; line-height: 1.2; }
+  .check-list { list-style: none; margin-bottom: 36px; }
+  .check-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: var(--muted); margin-bottom: 13px; line-height: 1.55; }
+  .check-list li .icon-check { color: var(--blue); flex-shrink: 0; margin-top: 1px; font-size: 13px; }
+  .check-list li .icon-x { color: rgba(240,237,232,0.18); flex-shrink: 0; margin-top: 1px; font-size: 13px; }
   .check-list li strong { color: var(--white); }
-  .stack-logos { padding: 20px 24px; background: rgba(240,237,232,0.03); border: 1px solid var(--border); border-radius: 4px; }
-  .stack-logos p { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--muted); text-transform: uppercase; margin-bottom: 12px; }
+  .stack-logos { padding: 20px 22px; background: rgba(240,237,232,0.025); border: 1px solid var(--border); }
+  .stack-logos p { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.18em; color: var(--muted); text-transform: uppercase; margin-bottom: 12px; }
   .logo-pills { display: flex; flex-wrap: wrap; gap: 8px; }
-  .logo-pill { padding: 6px 14px; background: rgba(240,237,232,0.04); border: 1px solid var(--border); border-radius: 2px; font-size: 13px; font-weight: 600; color: rgba(240,237,232,0.45); }
+  .logo-pill { padding: 6px 13px; background: rgba(240,237,232,0.04); border: 1px solid var(--border2); font-size: 13px; font-weight: 600; color: rgba(240,237,232,0.4); border-radius: 1px; }
 
   /* ─── SIGNALS ─── */
-  #signals { border-top: 1px solid var(--border); }
+  #signals { border-bottom: 1px solid var(--border); }
   .signals-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 64px; background: var(--border); border: 1px solid var(--border); }
-  .signal-card { background: var(--ink); padding: 40px 32px; transition: background 0.2s; }
-  .signal-card:hover { background: #0f1219; }
-  .signal-cat { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
-  .signal-cat::before { content: '▲'; font-size: 8px; }
-  .signal-title { font-size: 20px; font-weight: 700; margin-bottom: 20px; line-height: 1.2; }
+  .signal-card { background: var(--ink); padding: 44px 36px; transition: background 0.2s; }
+  .signal-card:hover { background: #0e1218; }
+  .signal-cat { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 18px; display: flex; align-items: center; gap: 8px; }
+  .signal-dot { width: 6px; height: 6px; background: var(--red); border-radius: 50%; flex-shrink: 0; animation: pulse 2.5s ease infinite; }
+  .signal-title { font-size: 22px; font-weight: 800; margin-bottom: 24px; line-height: 1.1; letter-spacing: -0.01em; }
   .signal-items { list-style: none; }
-  .signal-items li { font-size: 13px; color: var(--muted); padding: 10px 0; border-bottom: 1px solid var(--border); line-height: 1.55; }
+  .signal-items li { font-size: 13px; color: var(--muted); padding: 11px 0; border-bottom: 1px solid var(--border); line-height: 1.55; display: flex; gap: 10px; }
+  .signal-items li::before { content: '—'; color: rgba(240,237,232,0.15); flex-shrink: 0; }
   .signal-items li:last-child { border-bottom: none; }
-  .signal-items li strong { color: var(--white); }
+  .signal-items li strong { color: var(--muted2); }
 
   /* ─── PROOF ─── */
-  #proof { background: var(--mid); border-top: 1px solid var(--border); }
-  .vp-badge { display: inline-flex; align-items: center; gap: 8px; margin-top: 24px; padding: 8px 16px; background: rgba(26,86,255,0.08); border: 1px solid rgba(26,86,255,0.2); border-radius: 2px; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.12em; color: rgba(26,86,255,0.8); text-transform: uppercase; }
-  .vp-badge::before { content: '◎'; font-size: 10px; margin-right: 2px; }
+  #proof { background: var(--mid); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .vp-badge { display: inline-flex; align-items: center; gap: 8px; margin-top: 24px; padding: 7px 14px; background: rgba(26,86,255,0.07); border: 1px solid rgba(26,86,255,0.18); border-radius: 1px; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; color: rgba(26,86,255,0.75); text-transform: uppercase; }
+  .vp-badge::before { content: '◎'; color: var(--blue); }
   .proof-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; margin-top: 40px; background: var(--border); border: 1px solid var(--border); }
   .pstat { background: #1a1f2e; padding: 48px 36px; transition: background 0.2s; border-bottom: 3px solid transparent; }
   .pstat:hover { background: #1e2438; border-bottom-color: var(--blue); }
-  .pstat-num { font-size: 52px; font-weight: 800; line-height: 1; letter-spacing: -0.02em; }
-  .pstat-num.blue { color: var(--blue); } .pstat-num.white { color: var(--white); }
+  .pstat-num { font-size: clamp(44px, 4vw, 58px); font-weight: 800; line-height: 1; letter-spacing: -0.025em; }
+  .pstat-num.blue { color: var(--blue); }
+  .pstat-num.white { color: var(--white); }
   .pstat-desc { margin-top: 12px; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.12em; color: var(--muted); text-transform: uppercase; line-height: 1.5; }
-  .pstat-sub { margin-top: 8px; font-size: 12px; color: rgba(240,237,232,0.28); line-height: 1.5; }
-  .transparency-note { margin-top: 48px; padding: 28px 36px; border: 1px solid var(--border); border-left: 3px solid var(--blue); background: rgba(26,86,255,0.025); }
-  .transparency-note p { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.04em; color: var(--muted); line-height: 1.9; }
-  .transparency-note strong { color: rgba(240,237,232,0.65); }
-  .design-partner-section { margin-top: 64px; padding: 56px; border: 1px solid rgba(26,86,255,0.15); background: rgba(26,86,255,0.025); position: relative; overflow: hidden; border-radius: 4px; }
-  .design-partner-section::before { content: 'DESIGN PARTNER PROGRAM'; position: absolute; top: 20px; right: 24px; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.2em; color: rgba(26,86,255,0.22); text-transform: uppercase; }
+  .pstat-sub { margin-top: 6px; font-size: 12px; color: rgba(240,237,232,0.25); line-height: 1.5; }
+  .transparency-note { margin-top: 48px; padding: 28px 36px; border: 1px solid var(--border2); border-left: 3px solid var(--blue); background: rgba(26,86,255,0.02); }
+  .transparency-note p { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.04em; color: var(--muted); line-height: 1.95; }
+  .transparency-note strong { color: rgba(240,237,232,0.6); }
+  .design-partner-section { margin-top: 56px; padding: 52px 56px; border: 1px solid rgba(26,86,255,0.14); background: rgba(26,86,255,0.025); position: relative; border-radius: 2px; }
+  .design-partner-section::before { content: 'DESIGN PARTNER PROGRAM'; position: absolute; top: 18px; right: 22px; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; color: rgba(26,86,255,0.2); text-transform: uppercase; }
   .dp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
-  .dp-left h3 { font-size: 28px; font-weight: 800; line-height: 1.15; margin-bottom: 16px; }
+  .dp-left h3 { font-size: 28px; font-weight: 800; line-height: 1.15; margin-bottom: 14px; }
   .dp-left p { font-size: 15px; color: var(--muted); line-height: 1.75; margin-bottom: 28px; }
   .dp-perks { list-style: none; }
-  .dp-perks li { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: var(--muted); margin-bottom: 16px; line-height: 1.55; }
-  .dp-perks li .perk-icon { color: var(--blue); flex-shrink: 0; }
+  .dp-perks li { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: var(--muted); margin-bottom: 15px; line-height: 1.55; }
+  .dp-perks li .pk { color: var(--blue); flex-shrink: 0; }
   .dp-perks li strong { color: var(--white); }
-  .dp-slots { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--border); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase; }
-  .dp-slots span { color: var(--blue); font-weight: 600; }
+  .dp-slots { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border); font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase; }
+  .dp-slots b { color: var(--blue); }
+
+  /* ─── FAQ — AEO / LLM Discovery ─── */
+  #faq { border-bottom: 1px solid var(--border); }
+  .faq-layout { display: grid; grid-template-columns: 1fr 2fr; gap: 80px; margin-top: 64px; }
+  .faq-intro h3 { font-size: 22px; font-weight: 800; line-height: 1.2; margin-bottom: 14px; }
+  .faq-intro p { font-size: 14px; color: var(--muted); line-height: 1.75; margin-bottom: 24px; }
+  .faq-email { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--muted); text-decoration: none; text-transform: uppercase; border-bottom: 1px solid var(--border2); padding-bottom: 3px; transition: all 0.2s; }
+  .faq-email:hover { color: var(--blue); border-color: var(--blue); }
+  .faq-list { display: flex; flex-direction: column; }
+  .faq-item { border-top: 1px solid var(--border); }
+  .faq-item:last-child { border-bottom: 1px solid var(--border); }
+  .faq-q { padding: 22px 0; font-size: 16px; font-weight: 700; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; line-height: 1.3; transition: color 0.2s; user-select: none; }
+  .faq-q:hover { color: var(--muted2); }
+  .faq-icon { font-size: 22px; color: var(--blue); flex-shrink: 0; font-weight: 300; transition: transform 0.2s; }
+  .faq-a { display: none; padding-bottom: 22px; font-size: 14px; color: var(--muted); line-height: 1.85; }
+  .faq-a strong { color: var(--muted2); }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-item.open .faq-a { display: block; }
 
   /* ─── MARKET ─── */
-  #market { border-top: 1px solid var(--border); }
+  #market { background: var(--mid); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
   .market-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin-top: 64px; align-items: center; }
-  .market-stats { display: flex; flex-direction: column; gap: 24px; }
-  .mstat { padding: 24px 32px; border-left: 3px solid var(--blue); transition: background 0.2s; }
+  .market-stats { display: flex; flex-direction: column; gap: 20px; }
+  .mstat { padding: 22px 28px; border-left: 3px solid var(--blue); transition: background 0.2s; }
   .mstat:hover { background: rgba(26,86,255,0.04); }
-  .mstat-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
-  .mstat-num { font-size: 34px; font-weight: 800; color: var(--white); line-height: 1; letter-spacing: -0.01em; }
-  .mstat-sub { font-size: 13px; color: var(--muted); margin-top: 4px; }
+  .mstat-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+  .mstat-num { font-size: 34px; font-weight: 800; color: var(--white); line-height: 1; letter-spacing: -0.015em; }
+  .mstat-sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
 
   /* ─── CTA ─── */
   #cta { text-align: center; padding: 160px 48px; background: var(--ink); border-top: 1px solid var(--border); position: relative; overflow: hidden; }
-  #cta::before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 700px; height: 700px; background: radial-gradient(ellipse, rgba(26,86,255,0.09) 0%, transparent 65%); pointer-events: none; }
-  #cta h2 { font-size: clamp(40px, 5vw, 68px); max-width: 700px; margin: 0 auto 24px; line-height: 1.0; position: relative; z-index: 1; }
-  #cta .cta-sub { color: var(--muted); font-size: 18px; max-width: 460px; margin: 0 auto 48px; line-height: 1.65; position: relative; z-index: 1; }
-  .cta-actions { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; position: relative; z-index: 1; }
-  .cta-email-link { font-family: 'DM Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: var(--muted); text-decoration: none; text-transform: uppercase; border-bottom: 1px solid var(--border); padding-bottom: 3px; transition: color 0.2s, border-color 0.2s; }
+  #cta::before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 700px; height: 600px; background: radial-gradient(ellipse, rgba(26,86,255,0.09) 0%, transparent 62%); pointer-events: none; }
+  #cta h2 { font-size: clamp(44px, 5.5vw, 72px); max-width: 680px; margin: 0 auto 24px; line-height: 0.98; position: relative; z-index: 1; letter-spacing: -0.025em; }
+  .cta-sub { color: var(--muted); font-size: 18px; max-width: 480px; margin: 0 auto 48px; line-height: 1.7; position: relative; z-index: 1; }
+  .cta-actions { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; position: relative; z-index: 1; }
+  .cta-email-link { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: var(--muted); text-decoration: none; text-transform: uppercase; border-bottom: 1px solid var(--border2); padding-bottom: 3px; transition: color 0.2s, border-color 0.2s; }
   .cta-email-link:hover { color: var(--blue); border-color: var(--blue); }
-  .cta-note { margin-top: 36px; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; color: rgba(240,237,232,0.2); text-transform: uppercase; position: relative; z-index: 1; }
+  .cta-note { margin-top: 36px; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.18em; color: rgba(240,237,232,0.18); text-transform: uppercase; position: relative; z-index: 1; }
+
+  /* LinkedIn touchpoint */
+  .linkedin-strip { margin-top: 64px; padding-top: 48px; border-top: 1px solid var(--border); position: relative; z-index: 1; }
+  .linkedin-strip p { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: rgba(240,237,232,0.22); text-transform: uppercase; margin-bottom: 20px; }
+  .linkedin-btns { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
 
   /* ─── FOOTER ─── */
-  footer { padding: 40px 48px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
-  .footer-logo { font-size: 14px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+  footer { padding: 36px 48px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; position: relative; z-index: 2; }
+  .footer-logo { font-size: 13px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
   .footer-logo span { color: var(--blue); }
-  .footer-center { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); letter-spacing: 0.06em; }
-  .footer-right { font-family: 'DM Mono', monospace; font-size: 11px; color: rgba(240,237,232,0.22); }
-  .footer-right a { color: var(--blue); text-decoration: none; }
-  .footer-right a:hover { text-decoration: underline; }
+  .footer-center { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.06em; }
+  .footer-right { font-family: 'DM Mono', monospace; font-size: 10px; color: rgba(240,237,232,0.22); display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+  .footer-right a { color: rgba(240,237,232,0.35); text-decoration: none; transition: color 0.2s; }
+  .footer-right a:hover { color: var(--blue); }
 
   /* ─── FADE IN ─── */
-  .fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .fade-up { opacity: 0; transform: translateY(26px); transition: opacity 0.7s ease, transform 0.7s ease; }
   .fade-up.visible { opacity: 1; transform: none; }
-  .fade-up.d1 { transition-delay: 0.1s; } .fade-up.d2 { transition-delay: 0.2s; }
-  .fade-up.d3 { transition-delay: 0.3s; } .fade-up.d4 { transition-delay: 0.4s; }
-
-  /* ─── NOISE ─── */
-  body::after { content: ''; position: fixed; inset: 0; pointer-events: none; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E"); opacity: 0.5; z-index: 1000; mix-blend-mode: overlay; }
+  .d1 { transition-delay: 0.1s; } .d2 { transition-delay: 0.2s; }
+  .d3 { transition-delay: 0.3s; } .d4 { transition-delay: 0.4s; }
 
   /* ─── RESPONSIVE ─── */
-  @media (max-width: 900px) {
-    nav { padding: 16px 20px; }
+  @media (max-width: 920px) {
+    nav { padding: 0 20px; }
     .nav-links { display: none; }
     .nav-hamburger { display: flex; }
     section { padding: 80px 24px; }
-    #hero { padding: 100px 24px 60px; }
+    #hero { padding: 110px 24px 60px; }
     .hero-viz { display: none; }
-    .paradox-layout, .how-grid, .market-layout, .dp-grid { grid-template-columns: 1fr; gap: 48px; }
+    h2 { font-size: clamp(32px, 8.5vw, 52px); }
+    .hero-h1 { font-size: clamp(48px, 11vw, 76px); }
+    .hero-stat-band { grid-template-columns: repeat(2, 1fr); gap: 0; }
+    .hstat { border-right: none; margin-right: 0; padding: 28px 0; border-bottom: 1px solid var(--border); }
+    .hstat:nth-child(odd) { border-right: 1px solid var(--border); padding-right: 24px; }
+    .hstat:nth-child(even) { padding-left: 24px; }
+    .hstat:nth-last-child(-n+2) { border-bottom: none; }
+    .paradox-layout, .how-grid, .market-layout, .dp-grid, .faq-layout { grid-template-columns: 1fr; gap: 48px; }
     .proof-stats { grid-template-columns: repeat(2, 1fr); }
     .signals-grid { grid-template-columns: 1fr; }
-    .hero-stat-band { flex-direction: column; gap: 24px; }
-    .hstat { border-right: none; padding-right: 0; margin-right: 0; border-bottom: 1px solid var(--border); padding-bottom: 20px; }
-    .hstat:last-child { border-bottom: none; }
-    .blindspot-impact { flex-direction: column; gap: 32px; }
-    .bi-divider { display: none; }
+    .blindspot-impact { grid-template-columns: repeat(2, 1fr); }
+    .timeline-diagram { margin-left: 0; height: auto; overflow-x: auto; padding-bottom: 16px; }
+    .tl-axis-label { display: none; }
     footer { flex-direction: column; text-align: center; }
-    .design-partner-section { padding: 32px 20px; }
+    .design-partner-section { padding: 36px 24px; }
     .design-partner-section::before { display: none; }
     .form-row { grid-template-columns: 1fr; }
     .modal-box { padding: 32px 20px; }
-    .cta-actions { flex-direction: column; gap: 16px; }
+    .cta-actions { flex-direction: column; }
     #cta { padding: 100px 24px; }
+    .audience-strip { display: none; }
+    .linkedin-btns { flex-direction: column; align-items: center; }
   }
 </style>
 </head>
@@ -265,47 +437,40 @@
 
 <div id="progress-bar"></div>
 
-<!-- ─── CONTACT MODAL ─── -->
-<div class="modal-overlay" id="contactModal" role="dialog" aria-modal="true">
+<!-- ═══ CONTACT MODAL ═══ -->
+<div class="modal-overlay" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="modal-h">
   <div class="modal-box">
     <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
     <div id="formContent">
       <p class="modal-eyebrow">Get In Touch</p>
-      <h2 class="modal-title">Start the conversation.</h2>
-      <p class="modal-sub">Tell us a bit about your pipeline. We'll get back within one business day — no automated sequences.</p>
+      <h2 class="modal-title" id="modal-h">Start the conversation.</h2>
+      <p class="modal-sub">Tell us about your pipeline. A real reply from Naga — usually within one business day.</p>
       <form name="contact" netlify netlify-honeypot="bot-field" id="contactForm">
         <input type="hidden" name="form-name" value="contact">
         <p style="display:none;"><label>Don't fill: <input name="bot-field"></label></p>
         <div class="form-row">
-          <div class="form-group">
-            <label for="fname">Your Name</label>
-            <input type="text" id="fname" name="name" placeholder="Alex Chen" required>
-          </div>
-          <div class="form-group">
-            <label for="femail">Work Email</label>
-            <input type="email" id="femail" name="email" placeholder="alex@company.com" required>
-          </div>
+          <div class="form-group"><label for="fname">Your Name</label><input type="text" id="fname" name="name" placeholder="Alex Chen" required autocomplete="name"></div>
+          <div class="form-group"><label for="femail">Work Email</label><input type="email" id="femail" name="email" placeholder="alex@company.com" required autocomplete="email"></div>
         </div>
         <div class="form-row">
-          <div class="form-group">
-            <label for="fcompany">Company</label>
-            <input type="text" id="fcompany" name="company" placeholder="Acme Inc." required>
-          </div>
+          <div class="form-group"><label for="fcompany">Company</label><input type="text" id="fcompany" name="company" placeholder="Acme Inc." required></div>
           <div class="form-group">
             <label for="frole">Your Role</label>
             <select id="frole" name="role">
               <option value="" disabled selected>Select role</option>
               <option>CRO / Chief Revenue Officer</option>
+              <option>CFO / Chief Financial Officer</option>
+              <option>CEO / Founder</option>
               <option>VP Sales</option>
               <option>VP RevOps</option>
-              <option>Head of Revenue</option>
-              <option>Founder / CEO</option>
+              <option>Board Member</option>
+              <option>PE / VC / Investor</option>
               <option>Other</option>
             </select>
           </div>
         </div>
         <div class="form-group">
-          <label for="farr">Company ARR Range</label>
+          <label for="farr">Company ARR</label>
           <select id="farr" name="arr">
             <option value="" disabled selected>Select range</option>
             <option>Under $5M ARR</option>
@@ -315,165 +480,258 @@
             <option>$100M+ ARR</option>
           </select>
         </div>
-        <div class="form-group">
-          <label for="fmsg">What's on your mind? (optional)</label>
-          <textarea id="fmsg" name="message" placeholder="Tell us about your forecast challenges, CRM setup, or what you'd want to test..."></textarea>
-        </div>
+        <div class="form-group"><label for="fmsg">What's on your mind? (optional)</label><textarea id="fmsg" name="message" placeholder="Forecast challenges, CRM setup, what you'd want to test..."></textarea></div>
         <button type="submit" class="form-submit" id="formSubmit">Send Message →</button>
-        <p class="form-note">Replies come from naga@omnigenai.io · Usually within 1 business day</p>
+        <p class="form-note">Replies from naga@omnigenai.io · Usually within 1 business day<br>One conversation. No commitment, no IT involvement, no follow-up sequence.</p>
       </form>
     </div>
     <div class="form-success" id="formSuccess">
       <span class="success-icon">✓</span>
-      <h3>Message sent.</h3>
+      <h3>Message received.</h3>
       <p>Naga will be in touch within one business day.<br>No automated replies — a real conversation.</p>
     </div>
   </div>
 </div>
 
-<!-- ─── NAV ─── -->
-<nav>
-  <a class="nav-logo" href="#">Biz<span>winner</span></a>
+<!-- ═══ NAV ═══ -->
+<nav role="navigation" aria-label="Main navigation">
+  <a class="nav-logo" href="#" aria-label="Bizwinner home">Biz<span>winner</span></a>
   <div class="nav-links">
     <a href="#paradox" class="nav-link">The Problem</a>
     <a href="#how" class="nav-link">How It Works</a>
     <a href="#proof" class="nav-link">Our Model</a>
+    <a href="#faq" class="nav-link">FAQ</a>
     <button class="nav-cta" onclick="openModal()">Let's Talk</button>
   </div>
-  <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+  <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
-<!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="#paradox" onclick="toggleMenu()">The Problem</a>
   <a href="#how" onclick="toggleMenu()">How It Works</a>
   <a href="#proof" onclick="toggleMenu()">Our Model</a>
+  <a href="#faq" onclick="toggleMenu()">FAQ</a>
   <a href="#" class="m-cta" onclick="toggleMenu(); openModal(); return false;">Let's Talk</a>
 </div>
 
-<!-- ─── HERO ─── -->
-<section id="hero">
-  <p class="hero-eyebrow fade-up">The Revenue Truth Layer</p>
+<!-- ═══ HERO ═══ -->
+<section id="hero" aria-label="Hero — Revenue Decay Detection">
+
+  <!-- Audience strip — C-suite recognition layer -->
+  <div class="audience-strip fade-up" role="list" aria-label="Built for these roles">
+    <span class="audience-label">Built for</span>
+    <span class="audience-pill lit" role="listitem">CRO</span>
+    <span class="audience-pill lit" role="listitem">CFO</span>
+    <span class="audience-pill lit" role="listitem">CEO</span>
+    <span class="audience-pill" role="listitem">Board</span>
+    <span class="audience-pill" role="listitem">PE Firms</span>
+    <span class="audience-pill" role="listitem">Investors</span>
+  </div>
+
+  <p class="hero-eyebrow fade-up">Revenue Decay Detection</p>
+
   <h1 class="hero-h1 fade-up d1">
-    Your CRM<br>
-    <span class="strike-wrap">sees everything.</span><br>
-    <em>It sees nothing.</em>
+    Your forecast<br>
+    is <span class="strike-wrap">confident.</span><br>
+    <em>Your pipeline is not.</em>
   </h1>
-  <p class="hero-sub fade-up d2">Revenue dies 19 days before your forecast knows it. Bizwinner detects decay at the source — in buyer behavior, not rep activity.</p>
+
+  <p class="hero-sub fade-up d2">
+    Revenue protection, <strong>19 days before the damage is done.</strong><br>
+    The signal layer that reads buyer behavior your CRM was never built to track.
+  </p>
+
   <div class="hero-actions fade-up d3">
     <button class="btn-primary" onclick="openModal()">See It In Action</button>
     <a href="#proof" class="btn-ghost">How We Modeled It →</a>
   </div>
 
-  <svg class="hero-viz" viewBox="0 0 700 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <path id="decay-path-2" d="M0,200 C100,195 200,190 280,188 C360,186 420,184 500,183 C580,182 640,181 700,180" stroke="rgba(240,237,232,0.1)" stroke-width="2" stroke-dasharray="6 4" fill="none"/>
-    <path id="decay-path" d="M0,180 C80,178 140,175 200,172 C240,169 270,165 300,170 C330,175 340,190 360,210 C380,232 400,260 440,285 C480,308 540,330 600,355 C640,370 680,382 700,390" stroke="#e8251a" stroke-width="3" fill="none"/>
-    <text x="292" y="156" fill="rgba(232,37,26,0.6)" font-size="11" font-family="DM Mono, monospace" letter-spacing="0.08em">COMPETITOR ENTERS</text>
-    <text x="350" y="200" fill="rgba(232,37,26,0.6)" font-size="11" font-family="DM Mono, monospace" letter-spacing="0.08em">CHAMPION EXITS</text>
-    <text x="424" y="275" fill="rgba(232,37,26,0.6)" font-size="11" font-family="DM Mono, monospace" letter-spacing="0.08em">DEAL DEAD</text>
-    <text x="30" y="170" fill="rgba(240,237,232,0.22)" font-size="11" font-family="DM Mono, monospace">CRM: ON TRACK</text>
-    <text x="30" y="192" fill="rgba(232,37,26,0.5)" font-size="11" font-family="DM Mono, monospace">REALITY: DECAYING</text>
+  <!-- Animated SVG: two-line decay chart -->
+  <svg class="hero-viz" viewBox="0 0 700 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+    <!-- Grid -->
+    <line x1="0" y1="100" x2="700" y2="100" stroke="rgba(240,237,232,0.03)" stroke-width="1"/>
+    <line x1="0" y1="200" x2="700" y2="200" stroke="rgba(240,237,232,0.03)" stroke-width="1"/>
+    <line x1="0" y1="300" x2="700" y2="300" stroke="rgba(240,237,232,0.03)" stroke-width="1"/>
+    <line x1="175" y1="0" x2="175" y2="400" stroke="rgba(240,237,232,0.03)" stroke-width="1"/>
+    <line x1="350" y1="0" x2="350" y2="400" stroke="rgba(240,237,232,0.03)" stroke-width="1"/>
+    <line x1="525" y1="0" x2="525" y2="400" stroke="rgba(240,237,232,0.03)" stroke-width="1"/>
+    <!-- CRM perceived: falsely flat -->
+    <path id="crm-path" d="M0,192 C120,190 250,188 400,187 C520,186 620,185 700,184" stroke="rgba(240,237,232,0.1)" stroke-width="2.5" stroke-dasharray="8 5" fill="none"/>
+    <!-- Red glow halo under decay line -->
+    <path d="M0,182 C70,180 130,176 200,173 C250,170 278,166 300,172 C326,178 340,194 362,218 C384,244 406,270 446,296 C482,320 536,344 590,368 C630,384 668,394 700,400" stroke="rgba(232,37,26,0.12)" stroke-width="18" fill="none" stroke-linecap="round"/>
+    <!-- Real decay line -->
+    <path id="decay-path" d="M0,182 C70,180 130,176 200,173 C250,170 278,166 300,172 C326,178 340,194 362,218 C384,244 406,270 446,296 C482,320 536,344 590,368 C630,384 668,394 700,400" stroke="#e8251a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <!-- Event dots -->
+    <circle cx="300" cy="172" r="7" fill="#e8251a" opacity="0.9"/>
+    <circle cx="300" cy="172" r="14" fill="rgba(232,37,26,0.14)"/>
+    <circle cx="362" cy="218" r="7" fill="#e8251a" opacity="0.85"/>
+    <circle cx="446" cy="296" r="7" fill="#e8251a" opacity="0.8"/>
+    <!-- Labels -->
+    <text x="264" y="156" fill="rgba(232,37,26,0.65)" font-size="10" font-family="DM Mono,monospace" letter-spacing="0.09em">COMPETITOR ENTERS</text>
+    <text x="325" y="207" fill="rgba(232,37,26,0.65)" font-size="10" font-family="DM Mono,monospace" letter-spacing="0.09em">CHAMPION EXITS</text>
+    <text x="410" y="285" fill="rgba(232,37,26,0.65)" font-size="10" font-family="DM Mono,monospace" letter-spacing="0.09em">DEAL DEAD</text>
+    <!-- Legend -->
+    <text x="18" y="172" fill="rgba(232,37,26,0.42)" font-size="10" font-family="DM Mono,monospace">REALITY: DECAYING ↘</text>
+    <text x="18" y="190" fill="rgba(240,237,232,0.18)" font-size="10" font-family="DM Mono,monospace">CRM: ON TRACK ↔</text>
   </svg>
 
-  <div class="hero-stat-band fade-up d4">
-    <div class="hstat">
+  <!-- Stats band -->
+  <div class="hero-stat-band fade-up d4" role="list" aria-label="Key statistics">
+    <div class="hstat" role="listitem">
       <div class="hstat-num red">↓61%</div>
       <div class="hstat-label">Forecast accuracy by 2026<span class="src">Source: Gartner CRM 2026</span></div>
     </div>
-    <div class="hstat">
+    <div class="hstat" role="listitem">
       <div class="hstat-num">19 Days</div>
       <div class="hstat-label">Avg CRM lag on deal decay<span class="src">Source: Clari Revenue Leak 2025</span></div>
     </div>
-    <div class="hstat">
+    <div class="hstat" role="listitem">
       <div class="hstat-num blue">$4.2M</div>
-      <div class="hstat-label">Revenue projected recoverable<span class="src">Virtual pilot simulation</span></div>
+      <div class="hstat-label">Revenue projected recoverable<span class="src">Virtual pilot simulation · 240 deals</span></div>
     </div>
-    <div class="hstat">
+    <div class="hstat" role="listitem">
       <div class="hstat-num">$82K</div>
       <div class="hstat-label">Wasted per missed $100K deal<span class="src">Source: Clari Revenue Leak 2025</span></div>
     </div>
   </div>
 </section>
 
-<!-- ─── PARADOX ─── -->
-<section id="paradox">
+<!-- ═══ PARADOX ═══ -->
+<section id="paradox" aria-labelledby="paradox-h">
   <p class="section-label fade-up">The Paradox</p>
-  <h2 class="fade-up d1">More tools.<br>More AI.<br>Less revenue certainty.</h2>
+  <h2 id="paradox-h" class="fade-up d1">More tools. More AI.<br>Less revenue certainty.</h2>
   <div class="paradox-layout">
     <div class="paradox-col fade-up d2">
-      <h3>Investments ↑ Rising</h3>
-      <div class="bar-row"><div class="bar-label">CRM Market</div><div class="bar-value">$87.9B → $128.9B</div><div class="bar-track"><div class="bar-fill b60" style="width:68%"></div></div></div>
-      <div class="bar-row"><div class="bar-label">Tech Stack Complexity</div><div class="bar-value">6 tools → 12 tools</div><div class="bar-track"><div class="bar-fill b80" style="width:85%"></div></div></div>
-      <div class="bar-row"><div class="bar-label">AI SDR Adoption</div><div class="bar-value">65% of companies</div><div class="bar-track"><div class="bar-fill b100" style="width:65%"></div></div></div>
+      <h3 class="up">Your Investment ↑ Rising</h3>
+      <div class="bar-row">
+        <div class="bar-meta"><span class="bar-label">CRM Market Spend</span><span class="bar-value">$87.9B → $128.9B</span></div>
+        <div class="bar-track"><div class="bar-fill anim" style="width:68%"></div></div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-meta"><span class="bar-label">Sales Tools Per Team</span><span class="bar-value">6 → 12 tools</span></div>
+        <div class="bar-track"><div class="bar-fill anim" style="width:85%;animation-delay:0.4s"></div></div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-meta"><span class="bar-label">AI SDR Adoption</span><span class="bar-value">65% of companies</span></div>
+        <div class="bar-track"><div class="bar-fill anim" style="width:65%;animation-delay:0.6s"></div></div>
+      </div>
     </div>
     <div class="paradox-col fade-up d3">
-      <h3>Results ↓ Collapsing</h3>
-      <div class="decline-row"><div class="decline-metric">Forecast Accuracy</div><div class="decline-numbers"><span class="decline-old">72%</span><span class="decline-arrow">→</span><span class="decline-new">61%</span><span class="decline-pct">↓15%</span></div></div>
-      <div class="decline-row"><div class="decline-metric">Pipeline Conversion</div><div class="decline-numbers"><span class="decline-old">28%</span><span class="decline-arrow">→</span><span class="decline-new">19%</span><span class="decline-pct">↓32%</span></div></div>
-      <div class="decline-row"><div class="decline-metric">Revenue Misses</div><div class="decline-numbers"><span class="decline-old">35%</span><span class="decline-arrow">→</span><span class="decline-new">48%</span><span class="decline-pct" style="color:var(--red)">↑37%</span></div></div>
+      <h3 class="dn">Your Results ↓ Collapsing</h3>
+      <div class="decline-row">
+        <div class="decline-metric">Forecast Accuracy</div>
+        <div class="decline-numbers"><span class="decline-old">72%</span><span class="decline-arrow">→</span><span class="decline-new">61%</span><span class="decline-pct">↓15%</span></div>
+      </div>
+      <div class="decline-row">
+        <div class="decline-metric">Pipeline Conversion Rate</div>
+        <div class="decline-numbers"><span class="decline-old">28%</span><span class="decline-arrow">→</span><span class="decline-new">19%</span><span class="decline-pct">↓32%</span></div>
+      </div>
+      <div class="decline-row">
+        <div class="decline-metric">Quarters With Revenue Miss</div>
+        <div class="decline-numbers"><span class="decline-old">35%</span><span class="decline-arrow">→</span><span class="decline-new">48%</span><span class="decline-pct" style="color:var(--red)">↑37%</span></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ─── BLIND SPOT ─── -->
-<section id="blind-spot">
+<!-- ═══ BLIND SPOT — ROOT CAUSE ═══ -->
+<section id="blind-spot" aria-labelledby="blindspot-h">
   <p class="section-label fade-up">Root Cause</p>
-  <h2 class="blindspot-headline fade-up d1">Revenue dies<br><span class="num-red">19 days</span><br>before your<br>forecast knows.</h2>
+  <h2 id="blindspot-h" class="blindspot-headline fade-up d1">
+    Revenue dies<br>
+    <span class="num-red">19 days</span><br>
+    before your<br>
+    <span class="dim">forecast knows.</span>
+  </h2>
 
-  <div style="margin-top:72px;" class="fade-up d2">
-    <div style="position:relative;height:200px;margin:0 160px 0 160px;">
-      <div style="position:absolute;left:-160px;top:32px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);">REALITY</div>
-      <div style="position:absolute;left:-160px;top:120px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);">CRM</div>
-      <div style="position:absolute;top:36px;left:0;right:0;height:3px;background:var(--red);border-radius:2px;"></div>
-      <svg style="position:absolute;top:114px;left:0;right:0;width:100%;height:16px;" viewBox="0 0 800 16" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="8" x2="800" y2="8" stroke="rgba(240,237,232,0.18)" stroke-width="2" stroke-dasharray="10 6"/></svg>
-      <!-- Competitor -->
-      <div style="position:absolute;left:15%;top:22px;transform:translateX(-50%);"><div style="width:12px;height:12px;background:var(--red);border-radius:50%;border:2px solid var(--ink);margin:0 auto;"></div><div style="position:absolute;bottom:24px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:12px;font-weight:700;color:var(--white);text-align:center;line-height:1.3;">Competitor<br>Enters</div></div>
-      <div style="position:absolute;left:15%;top:108px;transform:translateX(-50%);"><div style="width:12px;height:12px;background:rgba(240,237,232,0.18);border-radius:50%;border:2px solid rgba(240,237,232,0.3);margin:0 auto;"></div><div style="position:absolute;top:18px;left:50%;transform:translateX(-50%);white-space:nowrap;font-family:'DM Mono',monospace;font-size:10px;color:var(--red);">NEVER LOGGED</div></div>
-      <div style="position:absolute;left:15%;top:62px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:2px;"><div style="width:1px;height:24px;background:rgba(232,37,26,0.3);"></div><div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--red);letter-spacing:0.08em;white-space:nowrap;">26 DAYS LATE</div></div>
-      <!-- Procurement -->
-      <div style="position:absolute;left:48%;top:22px;transform:translateX(-50%);"><div style="width:12px;height:12px;background:var(--red);border-radius:50%;border:2px solid var(--ink);margin:0 auto;"></div><div style="position:absolute;bottom:24px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:12px;font-weight:700;color:var(--white);text-align:center;line-height:1.3;">Procurement<br>Stalls</div></div>
-      <div style="position:absolute;left:48%;top:108px;transform:translateX(-50%);"><div style="width:12px;height:12px;background:rgba(240,237,232,0.18);border-radius:50%;border:2px solid rgba(240,237,232,0.3);margin:0 auto;"></div><div style="position:absolute;top:18px;left:50%;transform:translateX(-50%);white-space:nowrap;font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);">WEEK OF CLOSE</div></div>
-      <div style="position:absolute;left:48%;top:62px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:2px;"><div style="width:1px;height:24px;background:rgba(232,37,26,0.3);"></div><div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--red);letter-spacing:0.08em;white-space:nowrap;">21 DAYS LATE</div></div>
-      <!-- Champion -->
-      <div style="position:absolute;left:80%;top:22px;transform:translateX(-50%);"><div style="width:12px;height:12px;background:var(--red);border-radius:50%;border:2px solid var(--ink);margin:0 auto;"></div><div style="position:absolute;bottom:24px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:12px;font-weight:700;color:var(--white);text-align:center;line-height:1.3;">Champion<br>Exits</div></div>
-      <div style="position:absolute;left:80%;top:108px;transform:translateX(-50%);"><div style="width:12px;height:12px;background:rgba(240,237,232,0.18);border-radius:50%;border:2px solid rgba(240,237,232,0.3);margin:0 auto;"></div><div style="position:absolute;top:18px;left:50%;transform:translateX(-50%);white-space:nowrap;font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);">2 DAYS BEFORE</div></div>
-      <div style="position:absolute;left:80%;top:62px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:2px;"><div style="width:1px;height:24px;background:rgba(232,37,26,0.3);"></div><div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--red);letter-spacing:0.08em;white-space:nowrap;">18 DAYS LATE</div></div>
+  <!-- Timeline -->
+  <div class="timeline-diagram fade-up d2" aria-label="Timeline showing how buyer events go unlogged in CRM for weeks" role="img">
+    <span class="tl-axis-label reality" aria-hidden="true">REALITY</span>
+    <span class="tl-axis-label crm" aria-hidden="true">CRM</span>
+    <div class="tl-reality-line"></div>
+    <!-- CRM dashed line -->
+    <svg class="tl-crm-svg" viewBox="0 0 1000 16" preserveAspectRatio="none" aria-hidden="true">
+      <line x1="0" y1="8" x2="1000" y2="8" stroke="rgba(240,237,232,0.14)" stroke-width="2" stroke-dasharray="10 7"/>
+    </svg>
+
+    <!-- Event 1: Competitor Enters — 15% -->
+    <div class="tl-event tl-event-top" style="left:15%">
+      <div class="tl-event-label"><span>Competitor<br>Enters</span></div>
+      <div class="tl-event-dot"></div>
+      <div class="tl-lag"><div class="tl-lag-line"></div><div class="tl-lag-label">26 DAYS LATE</div></div>
+    </div>
+    <div class="tl-crm-dot-wrap" style="left:15%">
+      <div class="tl-crm-dot"></div>
+      <div class="tl-crm-label never">NEVER LOGGED</div>
+    </div>
+
+    <!-- Event 2: Procurement Stalls — 48% -->
+    <div class="tl-event tl-event-top" style="left:48%">
+      <div class="tl-event-label"><span>Procurement<br>Stalls</span></div>
+      <div class="tl-event-dot"></div>
+      <div class="tl-lag"><div class="tl-lag-line"></div><div class="tl-lag-label">21 DAYS LATE</div></div>
+    </div>
+    <div class="tl-crm-dot-wrap" style="left:48%">
+      <div class="tl-crm-dot"></div>
+      <div class="tl-crm-label late">WEEK OF CLOSE</div>
+    </div>
+
+    <!-- Event 3: Champion Exits — 80% -->
+    <div class="tl-event tl-event-top" style="left:80%">
+      <div class="tl-event-label"><span>Champion<br>Exits</span></div>
+      <div class="tl-event-dot"></div>
+      <div class="tl-lag"><div class="tl-lag-line"></div><div class="tl-lag-label">18 DAYS LATE</div></div>
+    </div>
+    <div class="tl-crm-dot-wrap" style="left:80%">
+      <div class="tl-crm-dot"></div>
+      <div class="tl-crm-label late">2 DAYS BEFORE</div>
     </div>
   </div>
 
-  <div class="blindspot-impact fade-up d3">
-    <div class="bi-stat"><div class="num">$82K</div><div class="desc">Wasted per missed $100K deal</div></div>
-    <div class="bi-divider"></div>
-    <div class="bi-stat"><div class="num">73%</div><div class="desc">Deals salvageable at 20 days notice</div></div>
-    <div class="bi-divider"></div>
-    <div class="bi-stat"><div class="num">18%</div><div class="desc">Deals salvageable at 5 days notice</div></div>
-    <div class="bi-divider"></div>
-    <div class="bi-quote"><strong>The window is everything.</strong> At 20 days you can save 73% of at-risk deals. At 5 days that collapses to 18%. Bizwinner targets first alert within 48 hours of first signal — giving you the full intervention window.</div>
+  <!-- Impact cards -->
+  <div class="blindspot-impact fade-up d3" role="list" aria-label="Impact statistics">
+    <div class="bi-card alert" role="listitem">
+      <div class="bi-num">$82K</div>
+      <div class="bi-desc">Wasted per missed $100K deal</div>
+    </div>
+    <div class="bi-card" role="listitem">
+      <div class="bi-num w">73%</div>
+      <div class="bi-desc">Deals salvageable at 20-day notice</div>
+    </div>
+    <div class="bi-card" role="listitem">
+      <div class="bi-num d">18%</div>
+      <div class="bi-desc">Deals salvageable at 5-day notice</div>
+    </div>
+    <div class="bi-card" role="listitem">
+      <div class="bi-num bl">48h</div>
+      <div class="bi-desc">Bizwinner target: first alert from first signal</div>
+    </div>
   </div>
 </section>
 
-<!-- ─── HOW IT WORKS ─── -->
-<section id="how">
+<!-- ═══ HOW IT WORKS ═══ -->
+<section id="how" aria-labelledby="how-h">
   <p class="section-label fade-up">The Solution</p>
-  <h2 class="fade-up d1">One layer of truth.<br>On top of your whole stack.</h2>
+  <h2 id="how-h" class="fade-up d1">One layer of truth.<br>On top of your whole stack.</h2>
   <div class="how-grid">
-    <div class="flow-diagram fade-up d2">
-      <div class="flow-step"><span class="flow-step-num">01</span><div><div class="flow-step-title">Read-Only Integration</div><div class="flow-step-desc">Non-invasive. Connects to your CRM, email, and engagement tools without touching your workflow.</div></div></div>
-      <div class="flow-step"><span class="flow-step-num">02</span><div><div class="flow-step-title">Track 23 Buyer Signals</div><div class="flow-step-desc">Monitors buyer behavior — not rep activity. Silence, drift, and disengagement are the real signals.</div></div></div>
-      <div class="flow-step"><span class="flow-step-num">03</span><div><div class="flow-step-title">Detect Decay (&gt;3σ deviation)</div><div class="flow-step-desc">Statistical anomaly detection fires the moment a deal breaks from its baseline — weeks before stage change.</div></div></div>
-      <div class="flow-step"><span class="flow-step-num">04</span><div><div class="flow-step-title">Alert &amp; Prescribe Action</div><div class="flow-step-desc">Named deal. Named risk. Named next step. Not a dashboard — a directive you can act on today.</div></div></div>
+    <div class="flow-diagram fade-up d2" role="list" aria-label="How Bizwinner works">
+      <div class="flow-step" role="listitem"><span class="flow-step-num">01</span><div><div class="flow-step-title">Read-Only Integration</div><div class="flow-step-desc">Non-invasive. Connects to your CRM, email, and engagement tools. Nothing changes in your workflow.</div></div></div>
+      <div class="flow-step" role="listitem"><span class="flow-step-num">02</span><div><div class="flow-step-title">Track 23 Buyer Signals</div><div class="flow-step-desc">Monitors buyer behavior — not rep activity. Silence, drift, and disengagement are the real signals.</div></div></div>
+      <div class="flow-step" role="listitem"><span class="flow-step-num">03</span><div><div class="flow-step-title">Detect Decay (&gt;3σ deviation)</div><div class="flow-step-desc">Statistical anomaly detection fires the moment a deal breaks from baseline — weeks before stage change.</div></div></div>
+      <div class="flow-step" role="listitem"><span class="flow-step-num">04</span><div><div class="flow-step-title">Alert &amp; Prescribe Action</div><div class="flow-step-desc">Named deal. Named risk. Named next step. Not a dashboard — a directive you can act on today.</div></div></div>
     </div>
     <div class="how-right fade-up d3">
       <h3>What we do — and what we don't.</h3>
-      <ul class="check-list">
+      <ul class="check-list" aria-label="Capabilities and non-capabilities">
         <li><span class="icon-check">✓</span><span><strong>Detect buyer silence &amp; drag</strong> — signals CRMs cannot track</span></li>
-        <li><span class="icon-check">✓</span><span><strong>Alert before CRM stage changes</strong> — avg 19 days early</span></li>
+        <li><span class="icon-check">✓</span><span><strong>Alert before CRM stage change</strong> — avg 19 days early</span></li>
         <li><span class="icon-check">✓</span><span><strong>Track forecast outcome accuracy</strong> — rep-level, deal-level</span></li>
+        <li><span class="icon-check">✓</span><span><strong>Give CFOs an independent signal</strong> — not rep-reported data</span></li>
         <li><span class="icon-x">✗</span><span>Does not replace your CRM</span></li>
         <li><span class="icon-x">✗</span><span>Does not automate outreach</span></li>
-        <li><span class="icon-x">✗</span><span>Does not score reps or promise AI closers</span></li>
+        <li><span class="icon-x">✗</span><span>Does not require IT involvement</span></li>
       </ul>
       <div class="stack-logos">
         <p>Works on top of your existing stack</p>
@@ -483,35 +741,35 @@
   </div>
 </section>
 
-<!-- ─── SIGNALS ─── -->
-<section id="signals">
+<!-- ═══ SIGNALS ═══ -->
+<section id="signals" aria-labelledby="signals-h">
   <p class="section-label fade-up">Signal Intelligence</p>
-  <h2 class="fade-up d1">We track the silence<br>your CRM misses.</h2>
-  <div class="signals-grid fade-up d2">
-    <div class="signal-card">
-      <div class="signal-cat">Engagement Decay</div>
+  <h2 id="signals-h" class="fade-up d1">23 signals your CRM<br>was never built to see.</h2>
+  <div class="signals-grid fade-up d2" role="list" aria-label="Signal categories">
+    <div class="signal-card" role="listitem">
+      <div class="signal-cat"><span class="signal-dot"></span>Engagement Decay</div>
       <div class="signal-title">Buyer Going Dark</div>
-      <ul class="signal-items">
+      <ul class="signal-items" aria-label="Engagement decay signals">
         <li>Champion last touch <strong>&gt;14 days</strong></li>
         <li>Email response time <strong>↑3× baseline</strong></li>
         <li><strong>"Pause" or "circle back"</strong> language detected</li>
         <li>Meeting cancellation streak</li>
       </ul>
     </div>
-    <div class="signal-card">
-      <div class="signal-cat">Stakeholder Risk</div>
+    <div class="signal-card" role="listitem">
+      <div class="signal-cat"><span class="signal-dot"></span>Stakeholder Risk</div>
       <div class="signal-title">Power Shift</div>
-      <ul class="signal-items">
+      <ul class="signal-items" aria-label="Stakeholder risk signals">
         <li>Economic buyer engagement <strong>↓60% from peak</strong></li>
         <li>Legal review stalled <strong>&gt;7 days</strong></li>
         <li>Champion title change <strong>via LinkedIn</strong></li>
         <li>New stakeholder added late-stage</li>
       </ul>
     </div>
-    <div class="signal-card">
-      <div class="signal-cat">Timeline Drift</div>
+    <div class="signal-card" role="listitem">
+      <div class="signal-cat"><span class="signal-dot"></span>Timeline Drift</div>
       <div class="signal-title">Deadline Decay</div>
-      <ul class="signal-items">
+      <ul class="signal-items" aria-label="Timeline drift signals">
         <li>Close date pushed <strong>2+ times</strong></li>
         <li>Demo → proposal gap <strong>&gt;2× average</strong></li>
         <li>Competitor mentioned or <strong>comparison spike</strong></li>
@@ -521,86 +779,167 @@
   </div>
 </section>
 
-<!-- ─── PROOF ─── -->
-<section id="proof">
+<!-- ═══ PROOF / VIRTUAL PILOT ═══ -->
+<section id="proof" aria-labelledby="proof-h">
   <p class="section-label fade-up">Virtual Pilot Simulation</p>
-  <h2 class="fade-up d1">Modeled on real deals.<br>Validated against industry data.</h2>
-  <div class="vp-badge fade-up d1">Virtual Pilot — Numbers are projections, not live customer results</div>
-  <div class="proof-stats fade-up d2">
-    <div class="pstat"><div class="pstat-num blue">$4.2M</div><div class="pstat-desc">Revenue Projected Recoverable</div><div class="pstat-sub">Modeled across 240 simulated deals</div></div>
-    <div class="pstat"><div class="pstat-num white">~54%</div><div class="pstat-desc">Projected Save Rate</div><div class="pstat-sub">Based on 20-day early detection window</div></div>
-    <div class="pstat"><div class="pstat-num white">23</div><div class="pstat-desc">Buyer Signals Tracked</div><div class="pstat-sub">Across engagement, stakeholder &amp; timeline layers</div></div>
-    <div class="pstat"><div class="pstat-num white">48h</div><div class="pstat-desc">Target Alert Speed</div><div class="pstat-sub">From first signal to notification</div></div>
+  <h2 id="proof-h" class="fade-up d1">Modeled on real deals.<br>Honest about what we know.</h2>
+  <div class="vp-badge fade-up d1" role="note">Virtual Pilot — Projections, not live customer results</div>
+
+  <div class="proof-stats fade-up d2" role="list" aria-label="Projected results">
+    <div class="pstat" role="listitem"><div class="pstat-num blue">$4.2M</div><div class="pstat-desc">Revenue Projected Recoverable</div><div class="pstat-sub">Modeled across 240 simulated deals</div></div>
+    <div class="pstat" role="listitem"><div class="pstat-num white">~54%</div><div class="pstat-desc">Projected Deal Save Rate</div><div class="pstat-sub">Based on 20-day early detection window</div></div>
+    <div class="pstat" role="listitem"><div class="pstat-num white">23</div><div class="pstat-desc">Buyer Signals Tracked</div><div class="pstat-sub">Engagement, stakeholder &amp; timeline</div></div>
+    <div class="pstat" role="listitem"><div class="pstat-num white">48h</div><div class="pstat-desc">Target Alert Speed</div><div class="pstat-sub">From first signal to first notification</div></div>
   </div>
-  <div class="transparency-note fade-up d3">
-    <p><strong>How we built these projections:</strong> We modeled Bizwinner's detection logic against 240 real-world deal patterns sourced from published Clari, Gong, and Pavilion RevOps benchmark datasets. We applied our 23-signal detection algorithm to known decay events, measured how early each would have been flagged, and calculated projected recovery rates based on the industry-validated 73% salvage rate at 20-day notice. These are model projections — not live customer outcomes. We will only publish verified numbers once we have paying customers who consent to sharing results. We are currently seeking <strong>10 design partners</strong> to run the first live validation.</p>
+
+  <div class="transparency-note fade-up d3" role="note">
+    <p><strong>How we built these projections:</strong> We ran Bizwinner's 23-signal detection algorithm against 240 real-world deal patterns sourced from published Clari, Gong, and Pavilion RevOps benchmark datasets. We measured how early each decay type would have been detected, then calculated recovery rates using the industry-validated 73% salvage rate at 20-day notice. <strong>These are model projections — not live customer outcomes.</strong> We will only publish verified numbers once design partners validate them with real pipelines. We are seeking <strong>10 design partners</strong> to run that first live validation.</p>
   </div>
-  <div class="design-partner-section fade-up d3">
+
+  <div class="design-partner-section fade-up d3" aria-labelledby="dp-h">
     <div class="dp-grid">
       <div class="dp-left">
-        <h3>Be the first to know if this works on your pipeline.</h3>
-        <p>We're talking to 10 mid-market B2B SaaS revenue leaders who want to run Bizwinner against their live pipeline — and help us prove (or disprove) every number above.</p>
+        <h3 id="dp-h">You're losing deals you don't even know are at risk.</h3>
+        <p>We're inviting 10 revenue leaders to find out exactly which ones — and save them before the quarter ends.</p>
         <button class="btn-primary" onclick="openModal()">Let's Talk →</button>
       </div>
       <div>
-        <ul class="dp-perks">
-          <li><span class="perk-icon">→</span><span><strong>Read-only integration.</strong> No workflow change, no CRM disruption.</span></li>
-          <li><span class="perk-icon">→</span><span><strong>You see the alerts first.</strong> Full transparency on what fires and why.</span></li>
-          <li><span class="perk-icon">→</span><span><strong>Shape the product.</strong> Your feedback directly influences what we build.</span></li>
-          <li><span class="perk-icon">→</span><span><strong>Founding pricing locked.</strong> Design partners get the lowest price we'll ever charge.</span></li>
-          <li><span class="perk-icon">→</span><span><strong>No commitment until you see value.</strong> We earn the contract.</span></li>
+        <ul class="dp-perks" aria-label="Design partner benefits">
+          <li><span class="pk">→</span><span><strong>Read-only integration.</strong> No workflow change, no CRM disruption.</span></li>
+          <li><span class="pk">→</span><span><strong>Full alert transparency.</strong> You see exactly what fires and why.</span></li>
+          <li><span class="pk">→</span><span><strong>Shape the product.</strong> Your feedback directly influences the roadmap.</span></li>
+          <li><span class="pk">→</span><span><strong>Founding pricing locked.</strong> The lowest price we'll ever charge.</span></li>
+          <li><span class="pk">→</span><span><strong>No commitment until you see value.</strong> We earn the contract.</span></li>
         </ul>
-        <div class="dp-slots"><span>10</span> design partner slots · <span>0</span> commitments required upfront</div>
+        <div class="dp-slots"><b>10</b> design partner slots &nbsp;·&nbsp; <b>0</b> commitments required upfront</div>
       </div>
     </div>
   </div>
 </section>
 
-
-<!-- ─── CTA ─── -->
-<section id="cta">
-  <p class="section-label fade-up" style="text-align:center;">Get In Touch</p>
-  <h2 class="fade-up d1">Stop losing deals<br>you didn't know<br>were dying.</h2>
-  <p class="cta-sub fade-up d2">You're losing deals you don't even know are at risk. We're inviting 10 revenue leaders to find out exactly which ones — and save them before the quarter ends. No commitment. No disruption. Just a conversation. </p>
-  <div class="cta-actions fade-up d3">
-    <button class="btn-primary" style="font-size:16px;padding:18px 48px;" onclick="openModal()">Let's Talk →</button>
-    <a class="cta-email-link" href="mailto:naga@omnigenai.io">naga@omnigenai.io</a>
+<!-- ═══ FAQ — AEO + LLM DISCOVERY OPTIMIZED ═══ -->
+<section id="faq" aria-labelledby="faq-h">
+  <p class="section-label fade-up">Questions</p>
+  <h2 id="faq-h" class="fade-up d1" style="max-width:580px;">What revenue leaders ask before they talk to us.</h2>
+  <div class="faq-layout fade-up d2">
+    <div class="faq-intro">
+      <h3>Answers written for CROs, CFOs, CEOs, and investors.</h3>
+      <p>Not marketing copy. If your question isn't here, email directly.</p>
+      <a href="mailto:naga@omnigenai.io" class="faq-email">Ask something else →</a>
+    </div>
+    <div class="faq-list" role="list">
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="false">What is revenue decay detection?<span class="faq-icon">+</span></div>
+        <div class="faq-a">Revenue decay detection monitors <strong>buyer behavior signals</strong> — not rep activity — to identify at-risk B2B deals before they fail. Unlike CRM stage changes (logged after the fact), decay detection tracks buyer silence, stakeholder disengagement, and procurement stalls in real time. Bizwinner detects these signals an average of <strong>19 days before your CRM reflects them</strong> — giving you the intervention window.</div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="false">Why does my CRM show a healthy pipeline until it's too late?<span class="faq-icon">+</span></div>
+        <div class="faq-a">CRMs are <strong>rep-reported systems</strong>. A rep updates a stage when they decide to — not when the buyer disengages. When your champion goes silent, procurement stalls, or a competitor enters the conversation — none of that is automatically captured. The result is a structural <strong>19-day lag</strong> between when a deal starts dying and when your forecast reflects it. This isn't a CRM failure. It's a design limitation Bizwinner fills.</div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="false">How does Bizwinner help CFOs give the board more reliable guidance?<span class="faq-icon">+</span></div>
+        <div class="faq-a">CFOs currently rely on CRM data that is rep-reported and structurally lagged. Bizwinner provides an <strong>independent, buyer-behavior-based signal layer</strong> that validates or contradicts CRM pipeline data in real time. This gives CFOs a second opinion on forecast quality before committing to board guidance — reducing the risk of a public forecast miss.</div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="false">Does Bizwinner replace our CRM or require IT?<span class="faq-icon">+</span></div>
+        <div class="faq-a"><strong>No on both counts.</strong> Bizwinner is a read-only signal layer that sits on top of Salesforce, HubSpot, Outreach, or Gong. It does not write to your CRM, change any workflow, require rep adoption, or need IT for deployment. Your existing stack stays exactly as it is.</div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="false">How do PE firms and investors use this?<span class="faq-icon">+</span></div>
+        <div class="faq-a">PE firms use Bizwinner to establish <strong>independent pipeline health monitoring</strong> across portfolio companies — a signal layer that doesn't depend on management's CRM data. During due diligence, forecast accuracy and pipeline conversion rates directly impact valuation. Bizwinner gives operating partners a verifiable signal layer that improves forecast discipline and surfaces revenue risk early.</div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="false">Are the numbers on this site from real customers?<span class="faq-icon">+</span></div>
+        <div class="faq-a"><strong>Not yet — and we say so clearly.</strong> All projected outcomes come from a virtual pilot: our detection algorithm run against 240 deal patterns from Clari, Gong, and Pavilion benchmark datasets. These are model projections. We will only publish verified numbers once design partners run Bizwinner against live pipelines and consent to sharing results. We believe this honesty is why you should trust us.</div>
+      </div>
+    </div>
   </div>
-  <p class="cta-note fade-up d4"> Mid-Market B2B SaaS</p>
 </section>
 
-<!-- ─── FOOTER ─── -->
-<footer>
+<!-- ═══ CTA ═══ -->
+<section id="cta" aria-labelledby="cta-h">
+  <p class="section-label fade-up" style="justify-content:center;">Get In Touch</p>
+  <h2 id="cta-h" class="fade-up d1">Stop losing deals<br>you didn't know<br>were dying.</h2>
+  <p class="cta-sub fade-up d2">
+    You're losing deals you don't even know are at risk. We're inviting 10 revenue leaders to find out exactly which ones — and save them before the quarter ends.<br><br>
+    One conversation. No commitment, no IT involvement, no follow-up sequence.
+  </p>
+  <div class="cta-actions fade-up d3">
+    <button class="btn-primary" style="font-size:15px;padding:17px 48px;" onclick="openModal()">Let's Talk →</button>
+    <a class="cta-email-link" href="mailto:naga@omnigenai.io">naga@omnigenai.io</a>
+  </div>
+  <p class="cta-note fade-up d4">10 design partner slots · Series Seed · Mid-Market B2B SaaS · omnigenai.io</p>
+
+  <!-- LinkedIn touchpoints — second conversion path -->
+  <div class="linkedin-strip fade-up d4">
+    <p>Follow the journey · Stay close to the signal</p>
+    <div class="linkedin-btns">
+      <a href="https://www.linkedin.com/company/omnigenai" target="_blank" rel="noopener noreferrer" class="btn-linkedin" aria-label="Follow OmnigenAI on LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        OmnigenAI · Company Page
+      </a>
+      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener noreferrer" class="btn-linkedin" aria-label="Connect with Naga on LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        Naga · Founder &amp; CEO
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer role="contentinfo">
   <div class="footer-logo">Biz<span>winner</span></div>
-  <div class="footer-center">The Revenue Integrity Layer</div>
-  <div class="footer-right">© 2026 Bizwinner &nbsp;·&nbsp; <a href="mailto:naga@omnigenai.io">naga@omnigenai.io</a></div>
+  <div class="footer-center">Revenue Decay Detection · Revenue protection, 19 days before the damage is done.</div>
+  <div class="footer-right">
+    <a href="mailto:naga@omnigenai.io">naga@omnigenai.io</a>
+    <a href="https://www.linkedin.com/company/omnigenai" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <span>© 2026 OmnigenAI</span>
+  </div>
 </footer>
 
 <script>
-  // Scroll progress
+  // ─── Scroll progress
   window.addEventListener('scroll', () => {
     const s = document.documentElement;
-    document.getElementById('progress-bar').style.width = (s.scrollTop / (s.scrollHeight - s.clientHeight) * 100) + '%';
-  });
+    document.getElementById('progress-bar').style.width =
+      (s.scrollTop / (s.scrollHeight - s.clientHeight) * 100) + '%';
+  }, { passive: true });
 
-  // Fade-in on scroll
-  const io = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  // ─── Fade-in on scroll
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
   document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
 
-  // Mobile menu
+  // ─── Bar chart observer
+  const barObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.bar-fill').forEach(b => b.classList.add('anim'));
+        barObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('#paradox').forEach(s => barObs.observe(s));
+
+  // ─── Mobile menu
   function toggleMenu() {
     const h = document.getElementById('hamburger');
     const m = document.getElementById('mobileMenu');
+    const open = !h.classList.contains('open');
     h.classList.toggle('open');
     m.classList.toggle('open');
-    document.body.style.overflow = m.classList.contains('open') ? 'hidden' : '';
+    h.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
   }
 
-  // Modal
+  // ─── Modal
   function openModal() {
     document.getElementById('contactModal').classList.add('open');
     document.body.style.overflow = 'hidden';
-    setTimeout(() => { const f = document.getElementById('fname'); if(f) f.focus(); }, 300);
+    setTimeout(() => { const f = document.getElementById('fname'); if (f) f.focus(); }, 300);
   }
   function closeModal() {
     document.getElementById('contactModal').classList.remove('open');
@@ -610,7 +949,26 @@
   document.getElementById('contactModal').addEventListener('click', function(e) { if (e.target === this) closeModal(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
-  // Form — Netlify submission
+  // ─── FAQ accordion
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      el.setAttribute('aria-expanded', 'true');
+    }
+  }
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleFaq(q); }
+    });
+  });
+
+  // ─── Netlify form
   document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const btn = document.getElementById('formSubmit');
