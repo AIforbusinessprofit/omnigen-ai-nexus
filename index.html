@@ -8,11 +8,12 @@
 <meta name="keywords" content="revenue decay detection, pipeline risk, CRM blind spots, forecast accuracy, B2B SaaS revenue intelligence, deal risk software, revenue protection, sales pipeline monitoring, CRO tools, CFO revenue visibility">
 <link rel="canonical" href="https://www.omnigenai.io">
 <meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2307090d'/%3E%3Cpath d='M16 2L28 7L28 17Q28 24 16 28Q4 24 4 17L4 7Z' fill='%231a56ff'/%3E%3Cpath d='M16 2L28 7L28 17Q28 24 16 28Q4 24 4 17L4 7Z' fill='none' stroke='%233d6fff' stroke-width='0.5'/%3E%3Cpolyline points='9,16 13.5,21 23,11' fill='none' stroke='white' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <meta name="author" content="OmnigenAI">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.omnigenai.io">
 <meta property="og:title" content="Revenue dies 19 days before your forecast knows it — Bizwinner">
-<meta property="og:description" content="Your CRM says the pipeline is healthy. Bizwinner reads the buyer signals your CRM was never built to track.">
+<meta property="og:description" content="Bizwinner detects silent revenue decay 19 days before your CRM does. The independent signal layer for CROs, CFOs, and PE-backed B2B SaaS. Modeled on 240 deals, $4.2M recoverable identified.">
 <meta property="og:image" content="https://www.omnigenai.io/og-image.png">
 <meta property="og:site_name" content="Bizwinner by OmnigenAI">
 <meta name="twitter:card" content="summary_large_image">
@@ -451,7 +452,7 @@ nav {
 }
 .strike {
   position: relative; display: inline-block;
-  color: rgba(240,237,232,0.15);
+  color: rgba(240,237,232,0.35);
 }
 .strike::after {
   content: '';
@@ -486,7 +487,7 @@ nav {
 .hero-chart {
   position: absolute; right: -10px; top: 50%;
   transform: translateY(-52%);
-  width: 44vw; max-width: 580px;
+  width: 50vw; max-width: 660px;
   opacity: 0.75; pointer-events: none; z-index: 0;
 }
 #dp { stroke-dasharray: 960; stroke-dashoffset: 960; animation: draw 2.2s 0.5s cubic-bezier(0.16,1,0.3,1) forwards; }
@@ -913,6 +914,68 @@ footer {
   .faq-q { padding: 24px 0; }
   .step { padding: 22px 18px; }
 }
+
+/* ── PROOF RIBBON ── */
+.proof-ribbon {
+  display: flex; align-items: center; justify-content: center;
+  gap: 0; flex-wrap: wrap;
+  margin-top: 48px; padding: 24px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  position: relative; z-index: 1;
+}
+.pr-item {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 0 40px; gap: 6px;
+}
+.pr-n {
+  font-size: clamp(22px, 2.4vw, 30px);
+  font-weight: 800; letter-spacing: -0.02em;
+  color: var(--blue-hi);
+}
+.pr-l {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--ink4);
+}
+.pr-div {
+  width: 1px; height: 36px;
+  background: var(--line2); flex-shrink: 0;
+}
+
+/* ── DESIGN PARTNER URGENCY ── */
+.dp-urgency {
+  margin-bottom: 14px;
+}
+.dp-slots {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 14px;
+  background: rgba(26,86,255,0.12);
+  border: 1px solid rgba(26,86,255,0.3);
+  border-radius: 2px;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--blue-hi);
+}
+.dp-slots::before {
+  content: '●';
+  color: var(--blue-hi);
+  animation: blink 2s ease infinite;
+  font-size: 8px;
+}
+
+@media (max-width: 900px) {
+  .proof-ribbon { gap: 0; }
+  .pr-item { padding: 16px 24px; }
+  .pr-div { width: 1px; height: 28px; }
+}
+@media (max-width: 540px) {
+  .proof-ribbon { flex-wrap: wrap; }
+  .pr-div:nth-child(4) { display: none; }
+  .pr-item { width: 50%; border-bottom: 1px solid var(--line); padding: 18px 12px; }
+  .pr-item:last-child, .pr-item:nth-last-child(2) { border-bottom: none; }
+  .pr-div { display: none; }
+}
 </style>
 </head>
 <body>
@@ -964,7 +1027,7 @@ footer {
         </div>
         <div class="fg"><label for="fm">What's on your mind? (optional)</label><textarea id="fm" name="message" placeholder="Forecast challenges, CRM setup, what you'd want to test..."></textarea></div>
         <button type="submit" class="form-cta" id="formBtn">Send Message →</button>
-        <p class="form-fine">Replies from naga@omnigenai.io · Usually within 1 business day<br>One conversation. No commitment. No IT involvement. No follow-up sequence.</p>
+        <p class="form-fine">Replies from <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="82ece3e5e3c2edefecebe5e7ece3ebacebed">[email&#160;protected]</a> · Usually within 1 business day<br>One conversation. No commitment. No IT involvement. No follow-up sequence.</p>
       </form>
     </div>
     <div class="form-ok" id="formOk">
@@ -979,8 +1042,8 @@ footer {
 <nav role="navigation" aria-label="Main navigation">
   <a class="logo" href="#" aria-label="Bizwinner home">Biz<span>winner</span></a>
   <div class="nav-links">
-    <a href="#paradox" class="nav-link">Problem</a>
-    <a href="#how" class="nav-link">Solution</a>
+    <a href="#paradox" class="nav-link">The Gap</a>
+    <a href="#how" class="nav-link">How It Works</a>
     <a href="#proof" class="nav-link">Model</a>
     <a href="#faq" class="nav-link">FAQ</a>
     <button class="nav-btn" onclick="openModal()">Let's Talk</button>
@@ -991,7 +1054,7 @@ footer {
 </nav>
 
 <div class="drawer" id="drawer">
-  <a href="#paradox" onclick="closeMenu()">The Problem</a>
+  <a href="#paradox" onclick="closeMenu()">The Gap</a>
   <a href="#how" onclick="closeMenu()">How It Works</a>
   <a href="#proof" onclick="closeMenu()">Our Model</a>
   <a href="#faq" onclick="closeMenu()">FAQ</a>
@@ -1021,13 +1084,13 @@ footer {
     </span>
   </div>
 
-  <div class="hero-sub up d2">
-    <p>Revenue protection, <strong>19 days before the damage is done.</strong> The independent signal layer that reads buyer behavior your CRM was never built to track.</p>
+  <div class="hero-cta up d2" style="margin-bottom:28px">
+    <button class="btn btn-primary" onclick="openModal()">See It In Action →</button>
+    <a href="#proof" class="btn btn-outline">How We Modeled It →</a>
   </div>
 
-  <div class="hero-cta up d3">
-    <button class="btn btn-primary" onclick="openModal()">See It In Action</button>
-    <a href="#proof" class="btn btn-outline">How We Modeled It →</a>
+  <div class="hero-sub up d3">
+    <p>Revenue protection, <strong>19 days before the damage is done.</strong> The independent signal layer that reads buyer behavior your CRM was never built to track.</p>
   </div>
 
   <!-- Desktop animated chart -->
@@ -1074,6 +1137,29 @@ footer {
     <div class="hst" role="listitem">
       <div class="hst-n">$82K</div>
       <div class="hst-label">Wasted per missed $100K deal<span class="hst-src">Clari Revenue Leak 2025</span></div>
+    </div>
+  </div>
+
+  <!-- ── PROOF RIBBON — 8-second trust signal ── -->
+  <div class="proof-ribbon up d4" role="complementary" aria-label="Key proof points">
+    <div class="pr-item">
+      <span class="pr-n">240</span>
+      <span class="pr-l">deals analysed</span>
+    </div>
+    <div class="pr-div"></div>
+    <div class="pr-item">
+      <span class="pr-n">$4.2M</span>
+      <span class="pr-l">recoverable identified</span>
+    </div>
+    <div class="pr-div"></div>
+    <div class="pr-item">
+      <span class="pr-n">19 days</span>
+      <span class="pr-l">earlier than your CRM</span>
+    </div>
+    <div class="pr-div"></div>
+    <div class="pr-item">
+      <span class="pr-n">54%</span>
+      <span class="pr-l">projected deal save rate</span>
     </div>
   </div>
 </section>
@@ -1293,6 +1379,7 @@ footer {
     <div class="dp-block up d3" aria-labelledby="dph">
       <div class="dp-cols">
         <div class="dp-left">
+          <div class="dp-urgency"><span class="dp-slots">7 of 10 slots remaining</span></div>
           <h3 id="dph">You're losing deals you don't even know are at risk.</h3>
           <p>We're inviting 10 revenue leaders to find out exactly which ones — and save them before the quarter ends.</p>
           <button class="btn btn-primary" onclick="openModal()">Let's Talk →</button>
@@ -1325,7 +1412,7 @@ footer {
       <div class="faq-intro">
         <h3>Answers written for CROs, CFOs, CEOs, and investors.</h3>
         <p>Not marketing copy. If your question isn't answered here, email directly.</p>
-        <a href="mailto:naga@omnigenai.io" class="faq-email">Ask something else →</a>
+        <a href="/cdn-cgi/l/email-protection#d4bab5b3b594bbb9babdb3b1bab5bdfabdbb" class="faq-email">Ask something else →</a>
       </div>
       <div role="list">
         <div class="faq-item" role="listitem">
@@ -1363,7 +1450,7 @@ footer {
 <section id="cta" aria-labelledby="ctah">
   <div class="cta-glow"></div>
   <p class="label up" style="justify-content:center; position:relative; z-index:1">Get In Touch</p>
-  <h2 id="ctah" class="display up d1" style="position:relative;z-index:1">Stop losing deals<br>you didn't know<br>were dying.</h2>
+  <h2 id="ctah" class="display up d1" style="position:relative;z-index:1">Stop losing deals<br>you don't know<br>are dying.</h2>
   <p class="cta-sub up d2">
     You're losing deals you don't even know are at risk. We're inviting 10 revenue leaders to find out exactly which ones — and save them before the quarter ends.
   </p>
@@ -1372,7 +1459,7 @@ footer {
   </p>
   <div class="cta-btns up d3">
     <button class="btn btn-primary" style="font-size:15px; padding:18px 52px" onclick="openModal()">Let's Talk →</button>
-    <a class="cta-email" href="mailto:naga@omnigenai.io">naga@omnigenai.io</a>
+    <a class="cta-email" href="/cdn-cgi/l/email-protection#4e202f292f0e21232027292b202f27602721"><span class="__cf_email__" data-cfemail="147a757375547b797a7d73717a757d3a7d7b">[email&#160;protected]</span></a>
   </div>
   <p class="cta-fine up d4">10 design partner slots · Series Seed · Mid-Market B2B SaaS · omnigenai.io</p>
 
@@ -1397,13 +1484,13 @@ footer {
   <div class="footer-brand">Biz<span>winner</span></div>
   <div class="footer-center">Revenue Decay Detection · 19 days before the damage is done.</div>
   <div class="footer-links">
-    <a href="mailto:naga@omnigenai.io">naga@omnigenai.io</a>
+    <a href="mailto:naga@omnigenai.io" class="btn btn-outline" style="font-size:11px;padding:8px 18px;letter-spacing:0.06em;border-color:rgba(240,237,232,0.12)">Email Naga →</a>
     <a href="https://www.linkedin.com/company/omnigen-ai/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     <span>© 2026 OmnigenAI</span>
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // ─── Progress bar
 window.addEventListener('scroll', () => {
   const s = document.documentElement;
@@ -1482,19 +1569,4 @@ document.querySelectorAll('.faq-q').forEach(q => {
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
   const btn = document.getElementById('formBtn');
-  btn.textContent = 'Sending…'; btn.disabled = true;
-  fetch('/', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams(new FormData(this)).toString()
-  }).then(() => {
-    document.getElementById('formWrap').style.display = 'none';
-    document.getElementById('formOk').style.display = 'block';
-  }).catch(() => {
-    btn.textContent = 'Send Message →'; btn.disabled = false;
-    alert('Something went wrong. Please email naga@omnigenai.io directly.');
-  });
-});
-</script>
-</body>
-</html>
+  btn.textContent = 'Sending…'
